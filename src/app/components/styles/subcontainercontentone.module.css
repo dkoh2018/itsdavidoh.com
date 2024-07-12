@@ -1,0 +1,90 @@
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  width: 100%;
+}
+
+.imageWrapper {
+  margin-bottom: 20px;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.textSection h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.textSection h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0;
+  line-height: 1.2;
+  text-align: center;
+  color: black;
+}
+
+.textSection p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+}
+
+.highlight {
+  color: #ff6347;
+}
+
+.bubbles {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.bubble {
+  width: 20px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .profileSection {
+    align-items: flex-start;
+  }
+
+  .textSection {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .textSection h1 {
+    font-size: 28px;
+  }
+
+  .textSection h2 {
+    font-size: 20px;
+  }
+
+  .textSection p {
+    font-size: 16px;
+  }
+
+  .bubbles {
+    justify-content: flex-start;
+  }
+}

@@ -1,14 +1,16 @@
 import React from "react";
+import styles from "./styles/ppimage.module.css";
 import Image from "next/image";
 
 const PPImage = () => {
   return (
-    <div style={{ position: "absolute", top: "60px", left: "60px" }}>
+    <div className={styles.imageContainer}>
       <Image
         src="/images/ppimage.svg"
         alt="DKO"
-        width={269}
-        height={269}
+        width={169}
+        height={169}
+        className={styles.logo}
       />
     </div>
   );

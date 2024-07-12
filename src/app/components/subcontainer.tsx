@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "../components/styles/subcontainer.module.css";
+import styles from "./styles/subcontainer.module.css";
 
 interface SubContainerProps {
   children: ReactNode;
