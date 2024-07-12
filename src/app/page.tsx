@@ -8,9 +8,7 @@ const HomePage = () => {
   return (
     <div className={styles.page}>
       <Container>
-        <SubContainer>
-          <SubContainerContentOne />
-        </SubContainer>
+        <SubContainerContentOne />
         {/* <SubContainer></SubContainer> */}
       </Container>
     </div>

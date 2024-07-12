@@ -11,12 +11,9 @@ const SubContainerContentOne = () => {
       <div className={styles.textSection}>
         <h1>
           Hi I'm David Oh - I'm a Trader and Digital Builder in
-          Chicago.
-        </h1>
-        <h2>
-          Currently attending{" "}
+          Chicago. Currently attending{" "}
           <span className={styles.highlight}>Depaul University</span>
-        </h2>
+        </h1>
         <p>
           With 8 years of experience as an options trader, I
           specialize in leveraging financial derivatives in

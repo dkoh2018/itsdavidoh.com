@@ -1,21 +1,22 @@
 .profileSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
+  max-width: 1690px;
+  margin: 0 auto;
 }
 
 .imageWrapper {
-  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .textSection {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
   color: black;
 }
@@ -25,7 +26,7 @@
   font-weight: bold;
   margin: 0;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
 }
 
 .textSection h2 {
@@ -33,7 +34,7 @@
   font-weight: normal;
   margin: 10px 0;
   line-height: 1.2;
-  text-align: center;
+  text-align: left;
   color: black;
 }
 
@@ -41,7 +42,7 @@
   font-size: 18px;
   margin: 10px 0;
   line-height: 1.5;
-  text-align: center;
+  text-align: left;
   color: black;
 }
 
@@ -64,12 +65,18 @@
 
 @media (max-width: 768px) {
   .profileSection {
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageWrapper {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .textSection {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
 
   .textSection h1 {
@@ -85,6 +92,6 @@
   }
 
   .bubbles {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
