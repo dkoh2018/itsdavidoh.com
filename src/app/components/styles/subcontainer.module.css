@@ -1,0 +1,10 @@
+.subContainer {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  padding: 30px;
+  margin: 20px 0;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 750px;
+}
