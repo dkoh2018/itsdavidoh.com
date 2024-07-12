@@ -1,11 +1,10 @@
 .imageContainer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-shrink: 0;
 }
 
 .logo {
-  max-width: 200px; /* Adjust size as necessary */
+  max-width: 200px;
   height: auto;
 }
