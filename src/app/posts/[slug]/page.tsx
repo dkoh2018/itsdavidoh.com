@@ -4,7 +4,7 @@ import Container from "../../_components/container";
 import { PostBody } from "../../_components/posts/post-body";
 import { PostHeader } from "../../_components/posts/post-header";
 import { PostTitle } from "../../_components/posts/post-title";
-import {Section} from "../../_components/section"
+import { Section } from "../../_components/section";
 
 interface Params {
   params: {
