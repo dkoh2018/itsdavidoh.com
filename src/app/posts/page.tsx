@@ -10,7 +10,7 @@ export default async function AllPosts() {
     <>
       <Section title="All Posts">
         {allPosts.length > 0 && <PostList posts={allPosts} />}
-        <Link href={`/`} className="text-blue-500 underline">
+        <Link href={`/`} className="text-miami-blue underline">
           Back to main
         </Link>
       </Section>

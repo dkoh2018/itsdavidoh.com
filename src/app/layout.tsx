@@ -30,6 +30,7 @@ export default function RootLayout({
       <body className={cn(inter.className)}>
         <section className="text-center mt-20 mb-16">
           <h1 className="text-3xl font-bold">davidoh</h1>
+          <h2 className="mt-2">IPA - /ˈdeɪvɪd oʊ/</h2>
           <h2 className="mt-2">
             davidoh2018 <b>[at]</b> gmail <b>[dot]</b> com
           </h2>

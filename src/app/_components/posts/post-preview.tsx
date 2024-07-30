@@ -7,17 +7,16 @@ type Props = {
   slug: string;
 };
 
-export function PostPreview({
-  title,
-  date,
-  slug,
-}: Props) {
+export function PostPreview({ title, date, slug }: Props) {
   return (
     <div>
       <h4 className="text-1xl mb-3 leading-snug">
         <DateFormatter dateString={date} />
         <span> | </span>
-        <Link href={`/posts/${slug}`} className="underline text-blue-500">
+        <Link
+          href={`/posts/${slug}`}
+          className="underline text-miami-blue"
+        >
           {title}
         </Link>
       </h4>
