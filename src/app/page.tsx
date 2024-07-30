@@ -3,6 +3,7 @@ import { PostList } from "./_components/posts/post-list";
 import { getAllPosts, getRecentFive } from "../lib/api";
 import { Section } from "./_components/section";
 import Link from "next/link";
+import LightBoardSection from "./_components/lightboardsection";
 
 export default function Index() {
   const allPosts = getAllPosts();
@@ -10,6 +11,8 @@ export default function Index() {
 
   return (
     <>
+      <LightBoardSection />
+
       <Section title="👋 hey there">
         <div className="mb-4">
           i'm david oh. i started trading in 2013, capitalizing on

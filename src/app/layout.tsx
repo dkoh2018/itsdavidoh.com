@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
 import Container from "./_components/container";
-import LightBoardSection from "./_components/lightboardsection";
 import { Section } from "./_components/section";
 
 import "./globals.css";
@@ -30,13 +29,12 @@ export default function RootLayout({
         />
       </head>
       <body className={cn(inter.className)}>
-        <section className="text-center mt-20 mb-16">
+        <section className="text-center mt-20 mb-8">
           <h1 className="text-3xl font-bold">davidoh</h1>
           <h2 className="mt-2">IPA - /ˈdeɪvɪd oʊ/</h2>
           <h2 className="mt-2">
             davidoh2018 <b>[at]</b> gmail <b>[dot]</b> com
           </h2>
-          <LightBoardSection />
         </section>
         <div className="flex-grow">{children}</div>
       </body>
