@@ -1,17 +1,30 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { LightBoard, PatternCell } from "./ui/lightboard";
 
-export default function LightBoardSection() {
+export function LightBoardSection() {
   const [controlledDrawState, setControlledDrawState] =
     useState<PatternCell>("2");
   const [controlledHoverState, setControlledHoverState] =
-    useState(true);
+    useState(false);
 
-  useEffect(() => {
-    console.log("LightBoardSection rendered");
-  }, []);
+  const cycleDrawState = () => {
+    setControlledDrawState((prev) => {
+      switch (prev) {
+        case "0":
+          return "1";
+        case "1":
+          return "2";
+        case "2":
+          return "3";
+        case "3":
+          return "0";
+        default:
+          return "0";
+      }
+    });
+  };
 
   return (
     <section className="text-center mb-8">
@@ -21,20 +34,18 @@ export default function LightBoardSection() {
           style={{ marginTop: "16px" }}
         >
           <LightBoard
-            rows={17}
-            lightSize={2}
-            gap={2}
             text="WELCOME"
+            rows={17}
+            gap={1}
+            lightSize={4}
             font="default"
-            disableDrawing={false}
             updateInterval={150}
             colors={{
-              drawLine: "#000000",
+              background: "#1a1a1a",
+              textDim: "#3a3a3a",
+              drawLine: "#7a7a7a",
+              textBright: "#ffffff",
             }}
-            controlledDrawState={controlledDrawState}
-            onDrawStateChange={setControlledDrawState}
-            controlledHoverState={controlledHoverState}
-            onHoverStateChange={setControlledHoverState}
           />
         </div>
       </div>

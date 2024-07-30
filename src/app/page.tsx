@@ -3,7 +3,7 @@ import { PostList } from "./_components/posts/post-list";
 import { getAllPosts, getRecentFive } from "../lib/api";
 import { Section } from "./_components/section";
 import Link from "next/link";
-import LightBoardSection from "./_components/lightboardsection";
+import { LightBoardSection } from "./_components/lightboardsection";
 
 export default function Index() {
   const allPosts = getAllPosts();
