@@ -12,31 +12,31 @@ export default function Index() {
     <>
       <Section title="👋 hey there">
         <div className="mb-4">
-          i'm David Oh. Since 2017, I've been navigating the
-          fast-paced world of funds, watching markets evolve at
-          breakneck speed. This journey led me to a pivotal
-          realization: the future isn't just in trading—it's in
-          building the systems that power it.
+          i'm david oh. i started trading in 2013, capitalizing on
+          the biotech boom and later the volatile markets during
+          covid-19, focusing on es futures and fang options. since
+          2017, it's been my full-time pursuit.
         </div>
         <div className="mb-4">
-          in 2018, I co-founded efoedge.com, where we've guided over
-          600 people through the intricacies of options trading.
-          While rewarding, this venture ignited a new ambition in me.
+          in 2020, i co-founded efoedge.com, where we've guided and
+          educated over 600 people in options trading and guiding
+          them through the covid-19 pandemic. thanks to the volatile
+          markets, many of my clients reaped.
         </div>
         <div className="mb-4">
-          fast forward to 2024, and tech is where it's at. I'm now
-          piecing together my experiences to create a modern,
-          efficient digital operation. My goal? To build solutions
-          that are dangerously efficient and genuinely impactful. I'm
-          driven by the belief that many will fall behind in this
-          tech revolution, and I'm determined not to let that
-          happen—not to me, not to you.
+          fast forward to 2024, tech dominates the landscape and
+          that's where this new journey begins. gone with the old, on
+          with the new. my goal moving forward? to build solutions
+          that are dangerously efficient and genuinely impactful.
+          scalability and autonomy. i'm driven by the belief that
+          many will fall behind in this tech revolution, and i'm
+          determined not to let that happen—not to me, not to you.
         </div>
         <div className="mb-4">
-          this blog is where I share my story, the lessons I've
-          learned, and the insights I continue to gather. As a
+          this blog is where i share my story, the lessons i've
+          learned, and the insights i continue to gather. as a
           lifelong learner still soaking up knowledge in my late 20s,
-          I'm excited to take you along on this journey. Whether it's
+          i'm excited to take you along on this journey. whether it's
           finance or just into creating cool stuff, stick around.
         </div>
         <div className="mb-4">
@@ -48,7 +48,7 @@ export default function Index() {
           </ul>
         </div>
         <div className="mb-4">
-          Let's build something awesome together.
+          let's build something awesome together.
         </div>
       </Section>
       <Section title="Blog">

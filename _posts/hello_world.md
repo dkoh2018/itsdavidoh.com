@@ -24,7 +24,7 @@ In fact, let me just tell you what I've seen to this date and have played as wel
 
 Having graduated from Northwestern University in 2018, I've since fully immersed myself into the world of trading. The endless hours staring at screens, day and night, including weekends, exacted a hefty toll on my body. In a twist of fate fueled by cockiness and an insatiable appetite for adventure, I found myself nursing a motorcycle injury in 2019. As if that wasn't enough, I've also undergone calcification treatment with electro-shockwave therapy on my left shoulder. Fun times, indeed.
 
-But here's the thing: I'm not just here to reminisce. As I watched my body rebel against those grueling hours, I had an epiphany - tech was the solution to my needs. Scalability. That's the golden ticket. The allure of high-level mathematics combined with scalability and automated systems drew me in. Do the dirty work early, and reap the rewards later, right?
+But here's the thing: I'm not just here to reminisce. As I watched my body rebel against those grueling hours, I had an epiphany - tech was the solution to my needs. Scalability and Autonomy. That's the golden ticket. The allure of high-level mathematics combined with scalability and automated systems drew me in. Do the dirty work early, and reap the rewards later, right?
 
 As of this writing, I'm pursuing a master's degree in computer science at DePaul University. I plan to use this digital space as a crucible for pushing my boundaries and challenging my long-held assumptions. Sure, I could stick to what I know – numbers, probabilities, market patterns. But where's the thrill in playing it safe?
 
