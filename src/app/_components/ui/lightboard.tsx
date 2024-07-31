@@ -35,7 +35,7 @@ interface LightBoardColors {
 const defaultColors: LightBoardColors = {
   drawLine: "rgba(160, 160, 200, 0.7)",
   background: "rgba(30, 30, 40, 0.3)",
-  textDim: "rgba(0, 0, 0, 0.5)",
+  textDim: "rgba(100, 100, 140, 0.5)",
   textBright: "rgba(220, 220, 255, 0.9)",
 };
 
@@ -59,9 +59,11 @@ const textToPattern = (
   columns: number,
   font: { [key: string]: Pattern }
 ): Pattern => {
+  // First, we make the letters bigger if we have more rows
   const letterHeight = font["A"].length;
   const scale = Math.max(1, Math.floor(rows / letterHeight));
 
+  // We make each letter in the font bigger
   const scaledFont = Object.fromEntries(
     Object.entries(font).map(([char, pattern]) => [
       char,
@@ -74,13 +76,15 @@ const textToPattern = (
         ),
     ])
   );
-
+  // We add spaces to the text
   const normalizedText = normalizeText(text);
 
+  // We turn each letter into a pattern of lights
   const letterPatterns = normalizedText
     .split("")
     .map((char) => scaledFont[char] || scaledFont[" "]);
 
+  // We combine all the letter patterns into one big pattern
   let fullPattern: Pattern = Array(scaledFont["A"].length)
     .fill([])
     .map(() => []);
@@ -92,6 +96,7 @@ const textToPattern = (
     ]);
   });
 
+  // We add empty space above and below the pattern to center it
   const totalRows = rows;
   const patternRows = fullPattern.length;
   const topPadding = Math.floor((totalRows - patternRows) / 2);
@@ -107,21 +112,15 @@ const textToPattern = (
     ),
   ];
 
-  const centeredPattern = paddedPattern.map((row) => {
-    const rowLength = row.length;
-    if (rowLength < columns) {
-      const leftPadding = Math.floor((columns - rowLength) / 2);
-      const rightPadding = columns - rowLength - leftPadding;
-      return [
-        ...Array(leftPadding).fill("0"),
-        ...row,
-        ...Array(rightPadding).fill("0"),
-      ];
+  // We make the pattern wider by repeating it
+  const extendedPattern = paddedPattern.map((row) => {
+    while (row.length < columns * 2) {
+      row = [...row, ...row];
     }
-    return row.slice(0, columns); // Slice to fit the columns
+    return row;
   });
 
-  return centeredPattern;
+  return extendedPattern;
 };
 
 // This function decides what color each light should be

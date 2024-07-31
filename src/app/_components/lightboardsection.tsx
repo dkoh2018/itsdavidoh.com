@@ -39,13 +39,18 @@ export function LightBoardSection() {
             gap={1}
             lightSize={4}
             font="default"
-            updateInterval={150}
+            updateInterval={500}
             colors={{
               background: "#1a1a1a",
               textDim: "#3a3a3a",
               drawLine: "#7a7a7a",
               textBright: "#ffffff",
             }}
+            controlledDrawState={controlledDrawState}
+            controlledHoverState={controlledHoverState}
+            onDrawStateChange={setControlledDrawState}
+            onHoverStateChange={setControlledHoverState}
+            disableDrawing={false}
           />
         </div>
       </div>
