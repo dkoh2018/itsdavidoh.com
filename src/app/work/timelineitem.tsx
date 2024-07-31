@@ -42,7 +42,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         </div>
       </div>
 
-      {/* Connecting line*/}
+      {/* Connecting line but not on mobile*/}
       <div
         className={`hidden md:block absolute top-1/2 ${
           isLeft ? "left-0" : "right-0"
@@ -66,7 +66,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         ></div>
       </div>
 
-      {/* Center dot*/}
+      {/* Center dot but not on mobile*/}
       <div
         className="hidden md:block absolute left-1/2 top-1/2 w-4 md:w-5 h-4 md:h-5 bg-gray-300 rounded-full z-30 border-4 border-white"
         style={{ transform: "translate(-50%, -50%)" }}
