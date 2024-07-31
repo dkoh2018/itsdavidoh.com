@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { FC } from "react";
 
-// Import the image
-import envelopeIcon from "../img/emaillogo.png";
-import githubIcon from "../img/githublogo.png";
-import twitterIcon from "../img/twitterlogo.png";
-import linkedinIcon from "../img/linkedinlogo.png";
+// Import the SVG images
+import envelopeIcon from "../img/emaillogo.svg";
+import githubIcon from "../img/githublogo.svg";
+import twitterIcon from "../img/twitterlogo.svg";
+import linkedinIcon from "../img/linkedinlogo.svg";
 
 const SocialMediaIcons: FC = () => {
   return (
