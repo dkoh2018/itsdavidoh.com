@@ -1,5 +1,5 @@
 ---
-title: "👋~👋~👋 CLICK MEEE!!!"
+title: "From Finance to Tech: My Journey So Far"
 date: "2024-07-30"
 ---
 
