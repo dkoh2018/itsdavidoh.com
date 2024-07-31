@@ -98,3 +98,11 @@ p {
   @apply text-base;
   @apply sm:text-sm;
 }
+
+ul,
+li {
+  @apply text-base;
+  @apply sm:text-sm;
+
+  line-height: 1.5;
+}
