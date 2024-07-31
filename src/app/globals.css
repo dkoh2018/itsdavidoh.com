@@ -86,3 +86,12 @@ aside a {
 .flex-grow {
   flex-grow: 1;
 }
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons a {
+  margin-right: 10px; /* add some space between each icon */
+}

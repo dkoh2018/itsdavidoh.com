@@ -4,6 +4,7 @@ import { getAllPosts, getRecentFive } from "../lib/api";
 import { Section } from "./_components/section";
 import Link from "next/link";
 import { LightBoardSection } from "./_components/lightboardsection";
+import SocialMediaIcons from "./_components/socialmediaicons";
 
 export default function Index() {
   const allPosts = getAllPosts();
@@ -67,6 +68,7 @@ export default function Index() {
           </Link>
         )}
       </Section>
+      <SocialMediaIcons />
     </>
   );
 }
