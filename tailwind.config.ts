@@ -9,6 +9,9 @@ const config: Config = {
         darkText: "#9CA3AF",
         "miami-blue": "#005DAB",
       },
+      fontFamily: {
+        mono: ["var(--font-geist-mono)"],
+      },
     },
   },
   plugins: [],

@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistMono } from "geist/font/mono";
 import cn from "classnames";
-import Container from "./_components/container";
-import { Section } from "./_components/section";
-import GradientLine from "./_components/gradientline";
-import Navigation from "./_components/navigation";
-
+import HeaderSection from "./_components/headersection";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: `davidoh`,
@@ -22,7 +16,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="overflow-y-auto bg-darkSlate text-darkText"
+      className={`overflow-y-auto bg-darkSlate text-darkText ${GeistMono.className}`}
     >
       <head>
         <meta
@@ -30,16 +24,8 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1"
         />
       </head>
-      <body className={cn(inter.className)}>
-        <section className="text-center mt-20 mb-8">
-          <h1 className="text-3xl font-bold">davidoh</h1>
-          <h2 className="mt-2">IPA - /ˈdeɪvɪd oʊ/</h2>
-          <h2 className="mt-2">
-            davidoh2018 <b>[at]</b> gmail <b>[dot]</b> com
-          </h2>
-          <Navigation />
-          <GradientLine />
-        </section>
+      <body>
+        <HeaderSection />
         <div className="flex-grow">{children}</div>
       </body>
     </html>

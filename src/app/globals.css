@@ -12,7 +12,7 @@ scrollbar-width: none; /* Firefox */
 -ms-overflow-style: none; /* IE/Edge */
 
 body {
-  font-family: "Open San s", sans-serif;
+  font-family: var(--font-geist-mono);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.625;
