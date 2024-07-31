@@ -21,8 +21,10 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({
   images,
 }) => {
   return (
-    <div className="mb-10 md:mb-10 relative">
-      <div className="flex items-center mb-10 md:mb-10">
+    <div className="mb-12 relative">
+      {" "}
+      {/* Changed mb-10 to mb-12 for consistency */}
+      <div className="flex items-center mb-10">
         <div className="w-5/6 text-left pr-10 md:pr-4">
           <div className="pl-10">
             <span className="ml-auto text-sm md:text-base text-gray-500">

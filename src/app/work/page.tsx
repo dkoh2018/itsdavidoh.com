@@ -10,7 +10,7 @@ export default function ResumeCV() {
   return (
     <>
       <Section title="">
-        <div className="container mx-auto w-full h-full max-w-3xl">
+        <div className="mx-auto mb-8 max-w-4xl">
           <section className="mt-12 mb-12">
             {interests.map((exp, index) => (
               <AboutMeItem
@@ -33,7 +33,7 @@ export default function ResumeCV() {
             ))}
           </section>
           <div className="mt-20">
-            <Link href={`/`} className="text-miami-blue underline">
+            <Link href="/" className="text-miami-blue underline">
               Back to main
             </Link>
           </div>
