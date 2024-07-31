@@ -9,7 +9,7 @@ import HorizontalLine from "./ui/horizontalline";
 export default function ResumeCV() {
   return (
     <>
-      <Section title="Resume/CV 👔 💼">
+      <Section title="">
         <div className="container mx-auto w-full h-full max-w-3xl">
           <section className="mt-12 mb-12">
             {interests.map((exp, index) => (
@@ -32,10 +32,11 @@ export default function ResumeCV() {
               />
             ))}
           </section>
-
-          <Link href={`/`} className="text-miami-blue underline">
-            Back to main
-          </Link>
+          <div className="mt-20">
+            <Link href={`/`} className="text-miami-blue underline">
+              Back to main
+            </Link>
+          </div>
         </div>
       </Section>
     </>

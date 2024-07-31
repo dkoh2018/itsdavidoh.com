@@ -15,10 +15,9 @@ const AboutMeItem: React.FC<AboutMeItemProps> = ({
   images,
 }) => {
   return (
-    <div className="mb-12 flex">
-      <div className="w-1/4 pr-4"></div>
-      <div className="w-3/4">
-        <h3 className="text-xl font-semibold mb-2">
+    <div className="mb-30 px-6 py-2">
+      <div className="w-full">
+        <h3 className="text-xl font-semibold mb-4">
           {link ? (
             <Link href={link} className="hover:underline">
               {title} →
@@ -27,11 +26,13 @@ const AboutMeItem: React.FC<AboutMeItemProps> = ({
             title
           )}
         </h3>
-        {description.map((paragraph, index) => (
-          <p key={index} className="mb-4">
-            {paragraph}
-          </p>
-        ))}
+        <div>
+          {description.map((paragraph, index) => (
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </div>
   );

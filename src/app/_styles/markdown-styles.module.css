@@ -11,8 +11,15 @@
 
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply sm:text-2xl sm:mt-8 sm:mb-3;
 }
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply sm:text-xl sm:mt-6 sm:mb-3;
+}
+
+.markdown p {
+  @apply text-base;
+  @apply sm:text-sm;
 }
