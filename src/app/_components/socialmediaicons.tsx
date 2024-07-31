@@ -23,18 +23,6 @@ const SocialMediaIcons: FC = () => {
         />
       </a>
       <a
-        href="https://twitter.com/0x_nietoh"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          src={twitterIcon}
-          alt="Twitter"
-          width={32}
-          height={32}
-        />
-      </a>
-      <a
         href="https://github.com/dkoh2018"
         target="_blank"
         rel="noopener noreferrer"
@@ -42,6 +30,18 @@ const SocialMediaIcons: FC = () => {
         <Image
           src={githubIcon}
           alt="Github"
+          width={32}
+          height={32}
+        />
+      </a>
+      <a
+        href="https://twitter.com/0x_nietoh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={twitterIcon}
+          alt="Twitter"
           width={32}
           height={32}
         />
