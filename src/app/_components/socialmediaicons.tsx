@@ -9,7 +9,7 @@ import linkedinIcon from "../img/linkedinlogo.png";
 
 const SocialMediaIcons: FC = () => {
   return (
-    <div className="social-media-icons">
+    <div className="social-media-icons mb-10">
       <a
         href="https://www.linkedin.com/in/david-k-oh/"
         target="_blank"
