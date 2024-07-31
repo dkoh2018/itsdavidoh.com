@@ -6,7 +6,6 @@ A dead simple personal website built with Next.js / React
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Contribution](#contribution)
 - [License](#license)
 
 ## Features <a name="features"></a>
@@ -22,5 +21,7 @@ A dead simple personal website built with Next.js / React
 3. Customize the design and layout as needed
 
 ## License <a name="license"></a>
+
+---
 
 This project is released under the [MIT License](https://opensource.org/licenses/MIT).
