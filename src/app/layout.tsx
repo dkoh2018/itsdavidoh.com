@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import cn from "classnames";
 import Container from "./_components/container";
 import { Section } from "./_components/section";
+import GradientLine from "./_components/gradientline";
+import Navigation from "./_components/navigation";
 
 import "./globals.css";
 
@@ -35,6 +37,8 @@ export default function RootLayout({
           <h2 className="mt-2">
             davidoh2018 <b>[at]</b> gmail <b>[dot]</b> com
           </h2>
+          <Navigation />
+          <GradientLine />
         </section>
         <div className="flex-grow">{children}</div>
       </body>

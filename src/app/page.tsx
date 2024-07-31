@@ -13,13 +13,13 @@ export default function Index() {
   return (
     <>
       <LightBoardSection />
-
       <Section title="👋 hey there">
         <div className="mb-4">
-          i'm david oh. i started trading in 2013, capitalizing on
-          the biotech boom and later the volatile markets during
-          covid-19, focusing on es futures and fang options. since
-          2017, it's been my full-time pursuit.
+          i'm david oh. i started trading in 2013, capitalizing from
+          the biotech boom to the volatile markets during covid-19,
+          focusing on es futures and fang options, supplemented with
+          underlying hedges. since 2017, it's been my full-time
+          pursuit and i'm grateful to have been fortunate.
         </div>
         <div className="mb-4">
           in 2020, i co-founded efoedge.com, where we've guided and
