@@ -64,8 +64,9 @@ export const experiences: WorkExperience[] = [
     date: "May 2017 - April 2018",
     description: [
       "i started this fund with a group of friends from northwestern. we had the privilege of working with some of the brightest minds during our time there, and fortunately, we met great people who delivered alpha at the time",
-      "conducting top-down fundamental research using bloomberg terminal was my speciality to identify mispriced assets and derivatives.",
-      "most of my time was analyzing institutional inflow/outflow, trend analysis, and risk utilizing TPO and DOM strats. learned to also manage sql databases",
+      "quickly promoted to lead biotech investments, i achieved a 65% success rate in fda phase approval analysis and made smart moves during apple’s share buyback program",
+      "my focus conducting top-down fundamental research using bloomberg terminal was my speciality to identify mispriced assets and derivatives.",
+      "most of my time was analyzing institutional inflow/outflow, trend analysis, and risk utilizing TPO and DOM strats. took first steps into data and learned to utilize sql financial databases",
     ],
   },
   {
