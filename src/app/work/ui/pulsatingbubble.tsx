@@ -16,8 +16,8 @@ const pulse = keyframes`
 `;
 
 const Bubble = styled.div`
-  width: 14px; /* Increase size slightly */
-  height: 14px; /* Increase size slightly */
+  width: 14px;
+  height: 14px;
   background-color: #000;
   border-radius: 50%;
   animation: ${pulse} 1s infinite;

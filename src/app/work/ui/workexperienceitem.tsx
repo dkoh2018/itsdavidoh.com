@@ -23,7 +23,6 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({
   return (
     <div className="mb-12 relative">
       {" "}
-      {/* Changed mb-10 to mb-12 for consistency */}
       <div className="flex items-center mb-10">
         <div className="w-5/6 text-left pr-10 md:pr-4">
           <div className="pl-10">

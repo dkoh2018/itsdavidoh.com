@@ -7,13 +7,13 @@ export interface WorkExperience {
 
 export const experiences: WorkExperience[] = [
   {
-    title: "Masters Student in Computer Science",
-    company: "DePaul University",
+    title: "Master's in Computer Science'",
+    company: "Depaul University",
     date: "2024 - Present",
     description: [
-      "after many years of wanting to break into tech and fear of leaving the industry, I've finally taken a chance on hybridly switching my career. I mean, number one, I really didn't enjoy that career in sales.",
-      "while I don't necessarily want to leave trading, coding after work made me realize that my passion lies here. To fool around a bit, I've created ACEgpt, a Next.js website utilizing ChatGPT API to generate college-level tests based on varying difficulty and content. Since the fun never stops, I've also started developing this personal website to share my journey and projects and get my voice out there. Learn to write and be comfortable with my thoughts to help others gain value. ",
-      "currently assisting in creating models for locomotion devices at the RAL lab under Professor Muhammad Umer Huzaifa. I spend long nights immersing myself in new AI applications, especially those geared towards network and energy use cases, recognizing the nation's growing need for energy efficiency for mass AI and app development adoption",
+      "after many years of wanting to break into tech and fear of leaving the industry, i've finally taken a chance on hybridly switching my career. i mean, number one, i really didn't enjoy that career in sales.",
+      "while i don't necessarily want to leave trading, coding after work made me realize that my passion lies here. to fool around a bit, i've created acegpt, a next.js website utilizing chatgpt api to generate college-level tests based on varying difficulty and content given the user's study guide and practice test materials. since the fun never stops, i've also started developing this personal website to share my journey and projects and get my voice out there. learn to write and be comfortable with my thoughts to help others gain value.",
+      "currently assisting in creating models for locomotion devices at the ral lab under professor muhammad umer huzaifa. i spend long nights immersing myself in new ai applications, especially those geared towards network and energy use cases, recognizing the nation's growing need for energy efficiency for mass ai and app development adoption",
     ],
   },
   {
