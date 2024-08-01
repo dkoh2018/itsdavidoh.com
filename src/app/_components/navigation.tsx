@@ -15,7 +15,7 @@ const Navigation = () => {
 
   return (
     <nav className="w-full max-w-4xl mx-auto mt-4 mb-2 px-4">
-      <div className="flex justify-end space-x-6">
+      <div className="flex justify-end space-x-3 md:space-x-6">
         {navItems.map((item) => (
           <Link
             key={item.path}
