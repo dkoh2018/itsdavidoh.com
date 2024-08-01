@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GeistMono } from "geist/font/mono";
-import cn from "classnames";
+import { ThemeProvider } from "next-themes";
 import HeaderSection from "./_components/headersection";
 import "./globals.css";
 
@@ -16,7 +16,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`overflow-y-auto bg-darkSlate text-darkText ${GeistMono.className}`}
+      className={`${GeistMono.className}`}
+      suppressHydrationWarning
     >
       <head>
         <meta
@@ -24,9 +25,11 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1"
         />
       </head>
-      <body>
-        <HeaderSection />
-        <div className="flex-grow">{children}</div>
+      <body className="overflow-y-auto bg-darkSlate text-darkText">
+        <ThemeProvider attribute="class">
+          <HeaderSection />
+          <div className="flex-grow">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );
