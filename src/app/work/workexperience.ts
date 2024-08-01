@@ -59,7 +59,7 @@ export const experiences: WorkExperience[] = [
     ],
   },
   {
-    title: "Equity Research Analyst",
+    title: "Equity Researcher/Trader",
     company: "Armitage Capital",
     date: "May 2017 - April 2018",
     description: [
