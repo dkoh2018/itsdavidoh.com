@@ -106,4 +106,12 @@ export const experiences: WorkExperience[] = [
       "graduated with a degree in philosiphy - logics from weinberg. go cats",
     ],
   },
+  {
+    title: "Born",
+    company: "",
+    date: "1995 - 2018",
+    description: [
+      "fun fact, my birthday was planned and timed by a fortune teller. south koreans have a way of going about things. 4:30pm sunday on a full moon for good luck",
+    ],
+  },
 ];
