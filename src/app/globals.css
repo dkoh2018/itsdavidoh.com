@@ -106,3 +106,11 @@ li {
 
   line-height: 1.5;
 }
+
+.vertical-line {
+  width: 2px; /* Adjust as needed */
+  background-color: #000; /* Adjust as needed */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

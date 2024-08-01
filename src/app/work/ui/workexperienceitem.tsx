@@ -34,7 +34,7 @@ const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({
         </div>
 
         <div className="w-4/6 ml-auto grid grid-cols-5">
-          <div className="col-start-2 col-span-1 flex justify-center">
+          <div className="col-start-1 col-span-1 flex justify-center">
             <VerticalLine />
           </div>
         </div>
