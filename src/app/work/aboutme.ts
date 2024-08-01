@@ -12,7 +12,9 @@ export const interests: AboutMe[] = [
   },
   {
     title: "my wife - jane",
-    description: ["can't live without her!!! she fuels my life"],
+    description: [
+      "can't live without her!!! she fuels my life. happy since 2017",
+    ],
   },
   {
     title: "mocha",
