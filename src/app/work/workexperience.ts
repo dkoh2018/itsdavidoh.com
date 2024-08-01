@@ -107,11 +107,11 @@ export const experiences: WorkExperience[] = [
     ],
   },
   {
-    title: "Born",
-    company: "",
-    date: "1995 - 2018",
+    title: "From Cradle to Pre-College",
+    company: "Chicago",
+    date: "1995 - 2014",
     description: [
-      "fun fact, my birthday was planned and timed by a fortune teller. south koreans have a way of going about things. 4:30pm sunday on a full moon for good luck",
+      "fun fact, a fortune teller preplanned my birthday. south koreans have a way of going about things. 4:30pm sunday on a full moon for good luck and it sure has been",
     ],
   },
 ];
