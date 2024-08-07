@@ -154,9 +154,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXX
 
-so, what is it that the narrative is telling us? they're telling us that when we take this one million immigrants, we somehow are tackling world poverty. we have to do it regardless of the effect on our unemployed, the working poor, the most vulnerable members of our society, and regardless of the effect on our natural resources. Even if we went by the most radical proposals in Washington, which are to actually double, triple, or quadruple our immigration, which would totally overwhelm our physical, natural, and social infrastructures, we couldn't make a noticeable difference...
+so, what is it that the narrative is telling us? they're telling us that when we take this one million immigrants, we somehow are tackling world poverty. we have to do it regardless of the effect on our unemployed, the working poor, the most vulnerable members of our society, and regardless of the effect on our natural resources. even if we went by the most radical proposals in washington, which are to actually double, triple, or quadruple our immigration, which would totally overwhelm our physical, natural, and social infrastructures, we couldn't make a noticeable difference...
 
-in fact, we may be really hurting the impoverished people of the world. The millions that we do take in are among the most educated, energetic, and certainly the most dissatisfied people. if they did not immigrate, they would potentially be citizens for change to improve their people in these countries. The true heroes in the global humanitarian field are those who have the wherewithal to immigrate to another country but instead stay in their countries to apply their skills to help their fellow countrymen.
+in fact, we may be really hurting the impoverished people of the world. the millions that we do take in are among the most educated, energetic, and certainly the most dissatisfied people. if they did not immigrate, they would potentially be citizens for change to improve their people in these countries. the true heroes in the global humanitarian field are those who have the wherewithal to immigrate to another country but instead stay in their countries to apply their skills to help their fellow countrymen.
 
 our immigration system, however, tends to lure these potential heroes away. making even a tiny dent in global poverty seems impossible when last year alone, many countries saw an increase of more people in poverty due to an increase in births over deaths. making the oslution even less viable.
 
@@ -166,7 +166,7 @@ however, there's hope to this solution. notice china and india? whether the stat
 
 let's compare the progress in reducing extreme poverty in china and india:
 
-| Year | China | India |
+| year | china | india |
 
 | 2000 | 358.4m | 437.0m |
 
@@ -176,7 +176,7 @@ let's compare the progress in reducing extreme poverty in china and india:
 
 don't you guys see? immigration can never be an effective or significant way to deal with the suffering people of the world. they have to be helped where they live. 3.8 billion of them will never be able to immigrate to a rich country. there's no hope for that. they have to bloom where they're planted. the only place that 99.9% of these people can be helped is where they live.
 
-considering the challenges faced by european countries, it's evident that mass migration presents complex issues. given the number of X's, even with 100 years, it's an impossible solution.
+considering the challenges faced by european countries, it's evident that mass migration presents complex issues. given the number of x's, even with 100 years, it's an impossible solution.
 
 so let's help them there.
 
