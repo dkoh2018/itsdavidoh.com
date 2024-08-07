@@ -7,7 +7,9 @@ date: "2024-08-07"
 
 had some late night talks about mass migration since it's 2024 and it seems to be the talk of the day. usa / eu / etc. you get the gist. i wanted to see particularly how it can help reduce global poverty.
 
-let's see the stats to see if it can be a viable solution as the narrative says:
+immigration is great. it enriches societies by attracting raw hungry talent. 
+
+but let's see the stats to see if it can be a viable solution to solve world poverty as the narrative says:
 
 now imagine this "X"
 
@@ -180,6 +182,8 @@ don't you guys see? immigration can never be an effective or significant way to 
 
 considering the challenges faced by european countries, it's evident that mass migration presents complex issues. given the number of x's, even with 100 years, it's an impossible solution.
 
+again, immigration is great. just dont use it as a solution to solve global suffering. 
+
 so let's help them there.
 
-_these are views based on data ¯\\\_(ツ)\_/¯_
+_these are my views based on data ¯\\\_(ツ)\_/¯_
