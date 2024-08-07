@@ -5,7 +5,7 @@ date: "2024-08-07"
 
 # i've been thinking
 
-had some late night talks about mass immigration since it's 2024 and it seems to be the talk of the day. usa / eu / etc. you get the gist. i wanted to see particularly how it can help reduce global poverty.
+had some late night talks about mass migration since it's 2024 and it seems to be the talk of the day. usa / eu / etc. you get the gist. i wanted to see particularly how it can help reduce global poverty.
 
 let's see the stats to see if it can be a viable solution as the narrative says:
 
