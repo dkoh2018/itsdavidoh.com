@@ -252,6 +252,10 @@ let's compare the progress in reducing extreme poverty in china and india:
 
 don't you guys see? immigration can never be an effective or significant way to deal with the suffering people of the world. they have to be helped where they live. 3.8 billion of them will never be able to immigrate to a rich country. there's no hope for that. they have to bloom where they're planted. the only place that 99.9% of these people can be helped is where they live.
 
+considering the challenges faced by european countries, it's evident that mass migration presents complex issues. given the number of X's, even with 100 years, it's an impossible solution.
+
 so let's help them there.
 
 _these are views based on data ¯\\\_(ツ)\_/¯_
+
+_dont confuse yourself with mass migration and immigration. two different topics_
