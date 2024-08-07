@@ -5,9 +5,9 @@ date: "2024-08-07"
 
 # i've been thinking
 
-had some late night talks about mass immigration since it's 2024 and it seems to be the talk today. usa / eu/ etc. i wanted to see particularly in how it can help reduce global poverty but is that really the case?
+had some late night talks about mass immigration since it's 2024 and it seems to be the talk of the day. usa / eu / etc. you get the gist. i wanted to see particularly how it can help reduce global poverty.
 
-lets break down the stats:
+let's see the stats to see if it can be a viable solution as the narrative says:
 
 now imagine this "X"
 
@@ -238,20 +238,20 @@ our immigration system, however, tends to lure these potential heroes away. maki
 
 illegal immigration adds another layer to the issue. there are about 11 million unauthorized immigrants in the u.s. as of 2023, with hundreds of thousands more coming in each year. they often come from impoverished backgrounds as well, seeking better opportunities but further highlighting the inadequacy of immigration as a solution to global poverty.
 
-however, there's hope to this solution. notice china and india? wehther the statistics are accurate or not, it's clear that both countries have risen into global economics leaders. their nations infratsturures and invesmtents into hteir city shows evidnece that people are living more prosperously than in the past few decades.
+however, there's hope to this solution. notice china and india? whether the stats are legit or not, it's obvious these countries have become big players in the global economy. just look at their cities and the money they're pouring into building stuff. it's pretty clear people there are living way better than they were a few decades back.
 
 let's compare the progress in reducing extreme poverty in china and india:
 
-year china india
+| Year | China | India |
 
----
+| 2000 | 358.4m | 437.0m |
 
-2000 358.4 million in poverty 437.0 million in poverty
-2010 160.9 million in poverty 405.9 million in poverty
-2023 virtually 0 (nearly eradicated) 34.4 million in poverty
+| 2010 | 160.9m | 405.9m |
+
+| today | ~0 | 34.4m |
 
 don't you guys see? immigration can never be an effective or significant way to deal with the suffering people of the world. they have to be helped where they live. 3.8 billion of them will never be able to immigrate to a rich country. there's no hope for that. they have to bloom where they're planted. the only place that 99.9% of these people can be helped is where they live.
 
 so let's help them there.
 
-#### these are views based on data ¯\_(ツ)\_/¯
+_these are views based on data ¯\\\_(ツ)\_/¯_
