@@ -183,5 +183,3 @@ considering the challenges faced by european countries, it's evident that mass m
 so let's help them there.
 
 _these are views based on data ¯\\\_(ツ)\_/¯_
-
-_dont confuse yourself with mass migration and immigration. two different topics_
