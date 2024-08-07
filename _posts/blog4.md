@@ -158,7 +158,9 @@ so, what is it that the narrative is telling us? they're telling us that when we
 
 in fact, we may be really hurting the impoverished people of the world. the millions that we do take in are among the most educated, energetic, and certainly the most dissatisfied people. if they did not immigrate, they would potentially be citizens for change to improve their people in these countries. the true heroes in the global humanitarian field are those who have the wherewithal to immigrate to another country but instead stay in their countries to apply their skills to help their fellow countrymen.
 
-our immigration system, however, tends to lure these potential heroes away. making even a tiny dent in global poverty seems impossible when last year alone, many countries saw an increase of more people in poverty due to an increase in births over deaths. making the oslution even less viable.
+our immigration system, however, tends to lure these potential heroes away. making even a tiny dent in global poverty seems impossible when last year alone, many countries saw an increase of more people in poverty due to an increase in births over deaths. making the solution even less viable.
+
+yet u.s.a. want to increase it...
 
 illegal immigration adds another layer to the issue. there are about 11 million unauthorized immigrants in the u.s. as of 2023, with hundreds of thousands more coming in each year. they often come from impoverished backgrounds as well, seeking better opportunities but further highlighting the inadequacy of immigration as a solution to global poverty.
 
