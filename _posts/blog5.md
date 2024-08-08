@@ -1,6 +1,6 @@
 ---
 title: "0 taxes as a w2"
-date: "2024-08-09"
+date: "2024-08-08"
 ---
 
 # and legally too...
@@ -19,11 +19,11 @@ but this barely gets your taxes down...
 
 # we want $0
 
-again, to use the system, you still need **some money and effort** but that doesn't mean you to come from the succession [https://www.google.com/search?q=succession] (make it so that it's in the succession link without showing the link)
+again, to use the system, you still need **some money and effort** but that doesn't mean [**succession money**](https://www.imdb.com/title/tt7660850/)
 
 personally, i believe in generating more income and worrying about taxes when the bag accumulates but that's another skillset.
 
-here's the breakdown:
+so here's the breakdown:
 
 # 1) get a rental property ("no kidding")
 
