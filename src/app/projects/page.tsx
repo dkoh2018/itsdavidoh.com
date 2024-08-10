@@ -32,7 +32,15 @@ export default function Projects() {
         <h3 className="text-lg font-semibold mb-2">requirements:</h3>
         <ul className="list-disc list-inside mb-4">
           <li>python 3.x</li>
-          <li>google calendar api credentials.json (oauth)</li>
+          <li>
+            <Link
+              href="https://developers.google.com/calendar/api/quickstart/python"
+              className="text-miami-blue underline"
+            >
+              google calendar api
+            </Link>{" "}
+            credentials.json (oauth)
+          </li>
           <li>
             <Link
               href="https://google-calendar-simple-api.readthedocs.io/en/latest/"
@@ -48,7 +56,7 @@ export default function Projects() {
               href="https://platform.openai.com/docs/api-reference/authentication"
               className="text-miami-blue underline"
             >
-              OpenAI documentation
+              openai documentation
             </Link>{" "}
             for setup)
           </li>
