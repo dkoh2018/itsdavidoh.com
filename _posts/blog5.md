@@ -1,11 +1,11 @@
 ---
 title: "0 taxes as a w2"
-date: "2024-08-08"
+date: "2024-08-10"
 ---
 
 # and legally too...
 
-you know what they say: when you can’t beat the system, use the system.
+you know what they say: when you can't beat the system, use the system.
 
 the trick, though, is that it requires some level of effort and money. every year, people pay $10,000+ in taxes and live day by day letting the system drain their hard-earned bread.
 
@@ -23,15 +23,13 @@ again, to use the system, you still need **some money and effort** but that does
 
 personally, i believe in generating more income and worrying about taxes when the bag accumulates but that's another skillset.
 
-so here's the breakdown:
-
 # 1) get a rental property ("no kidding")
 
 buying a rental property helps in strategically generating losses that offset w-2 income.
 
 # 2) make your str active
 
-usually, properties are classified as passive. but if the average stay is less than 7 days, the short-term-rental (str) isn’t considered a rental activity (section 1.469-1t(e)(3)(ii))
+usually, properties are classified as passive. but if the average stay is less than 7 days, the short-term-rental (str) isn't considered a rental activity (section 1.469-1t(e)(3)(ii))
 
 # 3) material participation (irs pub. 925)
 

@@ -14,21 +14,42 @@ export default function Index() {
     <>
       <LightBoardSection />
       <Section title="👋 what do you know, its david oh">
+        <div className="mb-5"></div>
         <p className="mb-4">
           this blog is where i share my story, the lessons i've learned, and the insights i continue
-          to gather. as a lifelong learner still soaking up knowledge in my late 20s, i'm excited to
-          take you along on this journey. whether it's finance or just into creating cool stuff,
-          stick around.
+          to gather. whether it's finance, tech or ranting, stick around. maybe you'll learn a thing
+          or two stick around.
         </p>
-        <div className="mb-4">
+        <p className="mb-4">
           my current toolbox includes:
           <ul className="list-disc list-inside mt-2">
             <li>Languages: Python, Java, C, TypeScript, React</li>
             <li>Frameworks: Next.js</li>
             <li>Databases: Firebase, SQL</li>
           </ul>
-        </div>
+        </p>
         <p className="mb-4">let's build something awesome together.</p>
+        <p className="mb-4">for now...</p>
+        <div className="space-y-2">
+          <div className="flex items-center">
+            <span className="mr-2">📚</span>
+            <Link
+              href={`/leetcode`}
+              className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200"
+            >
+              Checkout this LeetCode cheatsheet for young devs
+            </Link>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">🗓️</span>
+            <Link
+              href={`/projects`}
+              className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200"
+            >
+              I even made a Google Calendar AI on terminal
+            </Link>
+          </div>
+        </div>
       </Section>
       <Section title="Blog">
         {firstFivePosts.length > 0 && <PostList posts={firstFivePosts} />}
