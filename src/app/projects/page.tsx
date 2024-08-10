@@ -24,6 +24,7 @@ export default function Projects() {
           <li>Delete events from your calendar</li>
           <li>View existing events</li>
           <li>Manage calendar settings</li>
+          <li>ALL WITH NATURAL LANGUAGE</li>
         </ul>
         <h3 className="text-lg font-semibold mb-2">Requirements:</h3>
         <ul className="list-disc list-inside mb-4">

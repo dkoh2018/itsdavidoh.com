@@ -37,7 +37,7 @@ export default function Index() {
               href={`/leetcode`}
               className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200"
             >
-              Checkout this LeetCode cheatsheet for young devs
+              checkout this leetcode cheatsheet for young devs
             </Link>
           </div>
           <div className="flex items-center">
@@ -46,7 +46,7 @@ export default function Index() {
               href={`/projects`}
               className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200"
             >
-              I even made a Google Calendar AI on terminal
+              i even made a google calendar ai on terminal
             </Link>
           </div>
         </div>
