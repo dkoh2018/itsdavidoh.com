@@ -9,10 +9,12 @@ export default async function AllPosts() {
   return (
     <>
       <Section title="All Posts">
-        {allPosts.length > 0 && <PostList posts={allPosts} />}
-        <Link href={`/`} className="text-miami-blue underline">
-          Back to main
-        </Link>
+        <div className="mb-4">
+          <Link href={`/`} className="text-miami-blue underline">
+            back to main
+          </Link>
+        </div>
+        <div className="mt-10">{allPosts.length > 0 && <PostList posts={allPosts} />}</div>
       </Section>
     </>
   );

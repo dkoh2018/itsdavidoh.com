@@ -1,0 +1,158 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNH}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
+\newcommand{\resumeSubHeadingListStartBullets}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\usepackage{array}
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{38}{47}} 
+\newcolumntype{L}{>{\hb@xt@\z@\bgroup}l<{\hss\egroup}}
+\newcolumntype{C}{>{\centering\arraybackslash}c}
+\newcolumntype{R}{>{\hb@xt@\z@\bgroup\hss}r<{\egroup}}
+\makeatother
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{L@{\extracolsep{\fill}}C@{\extracolsep{\fill}}R}
+  \href{mailto:doh2@depaul.edu}{doh2@depaul.edu} &
+  \multirow{2}{*}{\HUGE \textbf{David Oh}} &
+  \href{https://itsdavidoh.com}{itsdavidoh.com} \\
+  (224)436-0498 & & Chicago, IL
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Professional Summary}
+\small{Computer Science graduate student with a blend of technical and financial market experience. Adept at applying data analytics to solve complex business challenges. Proven ability to innovate and deliver impactful solutions in fast-paced environments. Passionate about leveraging technology to create scalable systems. Proficient in Python, SQL, and a range of modern tools, with a commitment to continuous learning and excellence.}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DePaul University | Jarvis College of Computing}{Chicago, IL}
+      {Master of Science: Computer Science, GPA: 3.9}{Expected August 2026}
+      \resumeItemListStart
+        \resumeItem{Research}{Soft Robot Locomotion Model - Investigating novel AI-driven approaches to optimize robotic movement efficiency}
+        \resumeItem{Certification}{Google Data Analytics Professional Certificate}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Northwestern University | Weinberg College of Arts and Sciences}{Evanston, IL}
+      {Bachelor of Arts: Philosophy}{June 2018}
+      \resumeItemListStart
+        \resumeItem{Notable Project}{\href{https://www.fastcompany.com/3061599/dressers-dont-need-to-be-anchored-to-a-wall-these-student-designs-prove-it}{TipStop: Engineered an innovative solution to prevent dresser tip-overs}, featured on Fast Company}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+ \resumeSubHeadingListStart
+  \resumeSubheading
+    {YCharts}{Chicago, IL}
+    {SaaS Development Specialist}{June 2023 -- Nov 2023}
+    \resumeItemListStart
+      \resumeItem{Database Restructuring}{Restructured the database using HubSpot, improving data accuracy by 40\% and boosting sales team efficiency by 25\%.}
+      \resumeItem{Personalized Outreach}{Achieved a 50\% email response rate through data-driven personalization, surpassing the team average by 30\%.}
+      \resumeItem{Strategic Prospecting}{Identified and engaged with over 5,000 high-value prospects in the wealth management sector, resulting in a 15\% connect rate and generating \$200K in new pipeline opportunities.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {EFO EDGE, LLC}{Chicago, IL}
+    {Founder \& Chief Operating Officer}{May 2020 -- June 2023}
+    \resumeItemListStart
+      \resumeItem{Leadership and Growth}{Led a team of 5 to implement comprehensive growth strategies, resulting in a 55\% increase in qualified leads and 35\% year-over-year revenue growth.}
+      \resumeItem{Customer Acquisition \& Retention}{Developed and optimized a data-driven customer acquisition funnel, growing the membership base to 700+ with a market-leading 45\% retention rate.}
+      \resumeItem{Operational Scaling}{Scaled the business from startup to profitability, managing product development, marketing, and financial planning. Leveraged Stripe analytics to enhance the customer journey, increasing customer lifetime value by 35\% and reducing churn rate by 25\%.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Equity/Derivatives Trader}{Chicago, IL}
+    {Self-Employed}{June 2018 -- May 2020}
+    \resumeItemListStart
+      \resumeItem{Automated Financial Analysis}{Developed Python scripts for web scraping and ETL, automating the extraction of financial metrics from SEC filings and reducing analysis time by 60\%.}
+      \resumeItem{Data-Driven Forecasting}{Implemented advanced data segmentation techniques, improving the accuracy of investment forecasts by 40\%.}
+      \resumeItem{High ROI Trading}{Achieved a 69\%+ YoY ROI through data-driven trading strategies and rigorous risk management.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStartBullets
+    \resumeItem{AI-Powered Calendar Automation}{Developed Python CLI application using OpenAI API, Google Calendar API, and OAuth 2.0.}
+    \resumeItem{Portfolio Website}{Built with Next.js, TypeScript, and PostgreSQL. Check it out in the top right corner}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages \& Frameworks}{Python, JavaScript/TypeScript, SQL, React, Next.js}
+    \resumeSubItem{Data Science \& ML}{Pandas, NumPy, Scikit-learn, PyTorch}
+    \resumeSubItem{Tools \& Platforms}{PostgreSQL, Docker, Git, Google Cloud Platform, Tableau, Power BI}
+  \resumeSubHeadingListEnd
+
+\end{document}

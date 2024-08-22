@@ -20,14 +20,14 @@ export default function Index() {
           to gather. whether it's finance, tech or ranting, stick around. maybe you'll learn a thing
           or two stick around.
         </p>
-        <p className="mb-4">
-          my current toolbox includes:
+        <div className="mb-4">
+          <p>my current toolbox includes:</p>
           <ul className="list-disc list-inside mt-2">
             <li>Languages: Python, Java, C, TypeScript, React</li>
             <li>Frameworks: Next.js</li>
             <li>Databases: Firebase, SQL</li>
           </ul>
-        </p>
+        </div>
         <p className="mb-4">let's build something awesome together.</p>
         <p className="mb-4">for now...</p>
         <div className="space-y-2">

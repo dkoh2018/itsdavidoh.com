@@ -68,12 +68,8 @@ export default function Projects() {
             install required packages: <code>pip install -r requirements.txt</code>
           </li>
           <li>set up google calendar api credentials and save as credentials.json</li>
-          <li>add your openai api key to the .env file</li>
+          <li>setup openai client</li>
         </ol>
-        <p className="mb-4">
-          for detailed setup instructions, including how to obtain api keys and set up environment
-          variables, please refer to the readme.md file in the project repository.
-        </p>
         <h3 className="text-lg font-semibold mb-2">usage:</h3>
         <p className="mb-4">run the main script:</p>
         <pre className="bg-gray-100 p-2 mb-4">

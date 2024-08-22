@@ -11,17 +11,17 @@ export default function ResumeCV() {
     <>
       <Section title="">
         <div className="mx-auto mb-8 max-w-4xl">
+          <Link href="/" className="text-miami-blue underline mb-8">
+            back to main
+          </Link>
+
           <section className="mt-12 mb-12">
             {interests.map((exp, index) => (
-              <AboutMeItem
-                key={index}
-                title={exp.title}
-                description={exp.description}
-              />
+              <AboutMeItem key={index} title={exp.title} description={exp.description} />
             ))}
           </section>
           <HorizontalLine />
-          <section className="mt-12 mb-12">
+          <section className="mt-12 mb-20">
             {experiences.map((exp, index) => (
               <WorkExperienceItem
                 key={index}
@@ -32,11 +32,6 @@ export default function ResumeCV() {
               />
             ))}
           </section>
-          <div className="mt-20">
-            <Link href="/" className="text-miami-blue underline">
-              Back to main
-            </Link>
-          </div>
         </div>
       </Section>
     </>
