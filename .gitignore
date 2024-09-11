@@ -47,3 +47,5 @@ gemini/
 *.swp
 *.swo
 *.swn
+
+push_git_updates.sh
