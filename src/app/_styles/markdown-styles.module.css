@@ -31,15 +31,21 @@
   @apply sm:text-xl sm:mt-6 sm:mb-3;
 }
 
-/* Apply the same font styles to list items as paragraphs */
 .markdown p,
 .markdown li {
   @apply text-base;
   @apply sm:text-sm;
-  margin-bottom: 0.75rem; /* Adds back some space between list items */
+  margin-bottom: 0.75rem;
 }
 
-/* Media query for mobile devices */
+.markdown a {
+  @apply text-blue-600 underline;
+}
+
+.markdown a:hover {
+  @apply text-blue-800;
+}
+
 @media (max-width: 640px) {
   .markdown {
     @apply text-sm leading-relaxed;

@@ -1,26 +1,22 @@
 ---
-title: "AI: adapt or be left behind"
-date: "2024-09-09"
+title: "how to study as a developer"
+date: "2024-09-01"
 ---
 
-# [Cursor (click here)](https://www.cursor.com/)
+we spend the first 18+ years of our lives studying in school. everything is made systematically.
 
-loved by developers. hated by new developers.
+**"if you do this and that, then you "should" reap the benefits"**
 
-but wait... isn't it for the new developers? haven't you seen all the possibilities people with no code knowledge can make and build?
+however it doesn't seem to be the case. unless you've gotten a taste in entreprenuesrhip, many come to realize a bit too late that the materials they have studied or their degrees bear minimal value transitioning out of the academic world.
 
-here's how my conversation went last week:
+as a former white collar worker going back to school as a current masters student in computer science, i've come to quickly realize the university courses lack depth outside of academia. many of the platforms and materials are at least a decade behind and not as relevant for industry standards.
 
----
-
-- **friend**: "bro, it's so over. i literally built this bookkeeping app. the ui isn't the greatest but i made this in an hour."
-
-- **me**: "sure, can you send it to me?"
-
-- **friend**: "localhost:3000/"
+we can debate and shift the blame towards the univesrity but that's a futile debate.
 
 ---
 
-stay cracked
+# let's understand the objective of coding
 
--- **_david_**
+in the real world, coding is nothing more than trasnalting business solution and needs
+
+that's it!
