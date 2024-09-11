@@ -72,4 +72,6 @@ you need to generate income by renting out to short-term rental websites like ai
 
 ...if you just plan on purchasing a property for tax savings, you WILL lose more money overall
 
-_good luck, and have fun! :)_
+_good luck, and have fun!_
+
+-- **_david_**

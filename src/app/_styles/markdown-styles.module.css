@@ -9,6 +9,18 @@
   @apply my-6;
 }
 
+.markdown ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 1.5em;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding-left: 1.5em;
+}
+
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug;
   @apply sm:text-2xl sm:mt-8 sm:mb-3;
@@ -19,7 +31,30 @@
   @apply sm:text-xl sm:mt-6 sm:mb-3;
 }
 
-.markdown p {
+/* Apply the same font styles to list items as paragraphs */
+.markdown p,
+.markdown li {
   @apply text-base;
   @apply sm:text-sm;
+  margin-bottom: 0.75rem; /* Adds back some space between list items */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 640px) {
+  .markdown {
+    @apply text-sm leading-relaxed;
+  }
+
+  .markdown h2 {
+    @apply text-xl mt-8 mb-3;
+  }
+
+  .markdown h3 {
+    @apply text-lg mt-6 mb-3;
+  }
+
+  .markdown p,
+  .markdown li {
+    @apply text-xs;
+  }
 }

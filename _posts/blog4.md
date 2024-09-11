@@ -186,4 +186,4 @@ again, immigration is great. just dont use it as a solution to global suffering.
 
 so let's help them there.
 
-_these are my views based on data_
+-- **_david_**

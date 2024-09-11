@@ -10,13 +10,10 @@ type Props = {
 export function PostPreview({ title, date, slug }: Props) {
   return (
     <div>
-      <h4 className="text-1xl mb-3 leading-snug">
+      <h4 className="text-sm mb-3 leading-snug">
         <DateFormatter dateString={date} />
         <span> | </span>
-        <Link
-          href={`/posts/${slug}`}
-          className="underline text-miami-blue"
-        >
+        <Link href={`/posts/${slug}`} className="underline text-miami-blue">
           {title}
         </Link>
       </h4>

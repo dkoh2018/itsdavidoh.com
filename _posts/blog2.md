@@ -33,3 +33,5 @@ no idiot. that'd be bonkers. but starting small is key.
 what's got you stuck? **embarrassment and shame**. you've boxed yourself into being "that person," scared stiff of changing because, what, you're worried about a few side-eyes?
 
 **time to toss that crap aside and get in the game.**
+
+-- **_david_**

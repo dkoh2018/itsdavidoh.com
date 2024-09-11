@@ -41,3 +41,5 @@ in fact, this quote really stuck with me:
 as the tech industry advances beyond what the human population can fully grasp, these advancements can be used both for and against us. to achieve true good, one must sometimes understand the nature of evil. there are lessons to be learned from it.
 
 it's all fair game and im here for the ride :)
+
+-- **_david_**
