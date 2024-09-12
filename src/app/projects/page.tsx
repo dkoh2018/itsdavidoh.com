@@ -8,11 +8,7 @@ export default function Projects() {
         <Link href="/" className="text-miami-blue underline mb-8">
           back to main
         </Link>
-        <iframe
-          src="https://www.youtube.com/embed/nM0zjgd5x_g"
-          allowFullScreen
-          className="w-full h-96 mb-8"
-        />
+        <iframe src="https://youtu.be/ixGGdUoFKbE" allowFullScreen className="w-full h-96 mb-8" />
         <h2 className="text-xl font-bold mb-4">google cal on your terminal</h2>
         <p className="mb-4">
           this project combines the gcsa package, google calendar api, and openai to create an
