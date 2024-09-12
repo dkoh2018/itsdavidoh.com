@@ -5,8 +5,6 @@ date: "2024-09-09"
 
 # [cursor](https://www.cursor.com/)
 
-// Start of Selection
-
 loved by developers. hated by new developers.
 
 it's taken the world by storm and the pace of innovation just doesn't seem to end.
