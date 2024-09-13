@@ -55,7 +55,7 @@ even with the latest models like gpt-4 and llama3.1, they still fail at answerin
 
 ---
 
-# "sally has 5 sisters...bob is sally's brother. how many sister's does bob have?"
+# "sally has 5 sisters...bob is sally's brother. how many sisters does bob have?"
 
 ---
 
