@@ -14,7 +14,6 @@ export const experiences: WorkExperience[] = [
       "after many years of wanting to break into tech and fear of leaving the industry, i've finally taken a chance on hybridly switching my career. i mean, number one, i really didn't enjoy that career in sales.",
       "while i don't necessarily want to leave trading, coding after work made me realize that my passion lies here. to fool around a bit, i've created acegpt, a next.js website utilizing chatgpt api to generate college-level tests based on varying difficulty and content given the user's study guide and practice test materials.",
       "currently assisting in creating models for locomotion devices at the ral lab under professor muhammad umer huzaifa. i spend long nights immersing myself in new ai applications, especially those geared towards network and energy use cases, recognizing the nation's growing need for energy efficiency for mass ai and app development adoption.",
-      "certification: google data analytics professional certificate.",
     ],
   },
   {
