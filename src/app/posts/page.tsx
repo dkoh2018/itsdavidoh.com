@@ -8,7 +8,7 @@ export default async function AllPosts() {
 
   return (
     <>
-      <Section title="All Posts">
+      <Section title="all posts">
         <div className="mb-4">
           <Link href={`/`} className="text-miami-blue underline">
             back to main

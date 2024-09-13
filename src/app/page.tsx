@@ -55,7 +55,7 @@ export default function Index() {
         {firstFivePosts.length > 0 && <PostList posts={firstFivePosts} />}
         {allPosts.length > 5 && (
           <Link href={`/posts`} className="underline text-miami-blue">
-            See all posts
+            see all posts
           </Link>
         )}
       </Section>
