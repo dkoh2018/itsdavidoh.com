@@ -35,13 +35,13 @@ but it got me thinking:
 
 1. people who once couldn't are now capable, to a degree
 
-AI has lowered the barrier to entry for programming. embracing AI has **exponentially** accelerated my growth and drastically shortened the time needed to master new skills.
+ai has lowered the barrier to entry for programming. embracing ai has **exponentially** accelerated my growth and drastically shortened the time needed to master new skills.
 
 similar to what happened with google search, access to information and education has widened, but users started to lack depth in critical thinking, where your brain runs on auto.
 
 if users rely too heavily on ai like chatgpt, they might make the same mistake as assuming "localhost:3000" is a valid url to share.
 
-2. data architecture, design, and infrastructure are more critical than ever.
+2. critical thinking, data architecture, design, and infrastructure are more critical than ever.
 
 take a look at this
 
@@ -67,11 +67,11 @@ this may seem like a minor oversight, but as ai continues to evolve, tasks invol
 
 ---
 
-however, this highlights a broader issue: the importance of **engineering fundamentals**. as ai becomes more embedded in various industries, the need for strong **data architecture**, well-designed **infrastructure**, and efficient **tech stacks** becomes even more critical. these are aspects that can't easily be fixed with ai in the near future.
+however, this highlights a broader issue: the importance of **engineering fundamentals**.
 
-you'll come to realize the gaps in the engineering portion: developing infrastructure, creating the proper tech stack, and ensuring performance and memory efficiency within your organization.
+you'll come to realize the gaps in the engineering portion: developing infrastructure, creating the proper tech stack, and ensuring performance and memory efficiency within your organization. these are aspects that can't easily be fixed with ai in the near future.
 
-**the more you cultivate critical and logical thinking skills — abilities that automation can't replicate — the more valuable you'll become.** ai won't replace opportunities; it will create new ones for those who are prepared.
+**the more you cultivate skills into applying the bigger picture — abilities that automation can't replicate — the more valuable you'll become.** ai won't replace opportunities; it will create new ones for those who embrace it.
 
 ---
 
