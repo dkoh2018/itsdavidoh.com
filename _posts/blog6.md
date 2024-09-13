@@ -1,5 +1,5 @@
 ---
-title: "how to study as a developer"
+title: "studying as a developer"
 date: "2024-09-01"
 ---
 
