@@ -7,7 +7,7 @@ export const interests: AboutMe[] = [
   {
     title: "what do i do",
     description: [
-      "too many to cover. I love poker, crypto, equities, chess, driving, and feeling the thrill quietly. i also love to read a lot and some used to call me the human wikipedia. rabbit hole ventures can get interesting",
+      "too many to cover. i love poker, crypto, equities, chess, driving, and feeling the thrill quietly. i also love to read a lot and some used to call me the human wikipedia. rabbit hole ventures can get interesting",
     ],
   },
   {
