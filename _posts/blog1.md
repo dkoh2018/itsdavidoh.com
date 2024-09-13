@@ -1,5 +1,5 @@
 ---
-title: "from finance to tech: my journey so far"
+title: "from finance to tech. breaking the fear of change"
 date: "2024-07-29"
 ---
 

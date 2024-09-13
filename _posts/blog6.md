@@ -70,4 +70,4 @@ an ai engineer friend of mine once told me earlier this year that if people were
 
 makes you wonder why more don't do it.
 
--- _david_
+-- **_david_**
