@@ -5,6 +5,8 @@ date: "2024-09-16"
 
 # the go proverbs
 
+proverbs from [rob pike's](https://twitter.com/rob_pike) inspiring talk at [gopherfest sv 2015](https://www.youtube.com/watch?v=paakcsZug1c).
+
 1. don't communicate by sharing memory, share memory by communicating.
 
 2. concurrency is not parallelism.
