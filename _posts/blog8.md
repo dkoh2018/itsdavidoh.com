@@ -1,9 +1,9 @@
 ---
-title: "The Go Proverbs"
+title: "the Go Proverbs"
 date: "2024-09-16"
 ---
 
-# The Go Proverbs
+# the go proverbs
 
 1. Don't communicate by sharing memory, share memory by communicating.
 
