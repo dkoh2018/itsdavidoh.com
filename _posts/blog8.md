@@ -59,6 +59,10 @@ don’t let ignorance hold you back
 
 there has never been a better time to see what you are capable of.
 
-the time to act is now.
+the time to act is **now**.
+
+let’s do the hard work and achieve great things. for yourself and for the future. i’ll be driving these spikes into the tracks right alongside you.
+
+there’s a long road ahead, and we’ve got plenty to build.
 
 -- **_david_**
