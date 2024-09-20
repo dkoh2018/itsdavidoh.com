@@ -7,7 +7,7 @@ i'm 28
 
 while some of you fresh graduates might consider me ancient at 28, let's take a look at the bigger picture.
 
-even if i were double my age, i still wouldn't be eligible for:
+even if i were **double** my age, i still wouldn't be eligible for:
 
 - social security
 - accessing retirement funds without penalties
