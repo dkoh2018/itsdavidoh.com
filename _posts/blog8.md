@@ -60,3 +60,5 @@ don’t let ignorance hold you back
 there has never been a better time to see what you are capable of.
 
 the time to act is now.
+
+-- _*david*_
