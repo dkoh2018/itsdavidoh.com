@@ -16,7 +16,7 @@ even if i were **double** my age, i still wouldn't be eligible for:
 
 with that perspective in mind, it's clear that there's a lot more to accomplish. got a job at faang right out of college? great! but do you really think you'll work there for the next 30 years? even if that's possible, what are the odds of not getting outcompeted or wanting something different by then?
 
-and even if you retire at 60, with people living well into their 80s and 90s, that's another 20-30 years ahead—almost as long as i've lived so far. those in their 60s have another journey ahead, even after they've contributed decades to society.
+and even if you retire at 60, with people living well into their 80s and 90s, that's another 20-30 years ahead — almost as long as i've lived so far. those in their healthy 60s have another journey ahead, even after they've contributed decades to society.
 
 perspective is what fuels motivation. it's not just about what you've done, but what's still possible.
 
