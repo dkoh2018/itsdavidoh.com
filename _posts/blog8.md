@@ -53,9 +53,9 @@ and this is just the beginning.
 
 each of these tools redefines our biological human potential.
 
-sounds great but you already have the power to harness all of this—right from your own bedroom today.
+sounds great but you already have the power to harness all of this — right from your own bedroom today.
 
-don’t let ignorance hold you back
+don’t let ignorance hold you back.
 
 there has never been a better time to see what you are capable of.
 

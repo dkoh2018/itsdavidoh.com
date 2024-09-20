@@ -35,7 +35,7 @@ you don't need a business problem handed to you, but you do need to approach cod
 
 personally i got stuck into a loop of building small projects that never go anywhere.
 
-you learn bits and pieces but never full grasp how to move beyond that.
+you learn bits and pieces but never fully grasp how to move beyond that.
 
 **so i had to make a shift in the way i learn**
 
