@@ -63,7 +63,7 @@ a $60,000 loss could save around $20,000 in taxes, depending on the tax bracket.
 
 ---
 
-when it's time to sell the rental, you'll be subject to depreciation recapture.
+when it's time to sell the rental, you'll be subject to **depreciation recapture**.
 
 however, you can
 
