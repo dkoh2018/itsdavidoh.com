@@ -68,6 +68,6 @@ to separate yourself from the crowd, it's more important than ever to stay on to
 
 an ai engineer friend of mine once told me earlier this year that if people were to just read the latest 15 research papers and fully understand them, they would be more valuable in the market than most people realize.
 
-makes you wonder why more don't do it.
+makes you wonder why more don't do it
 
 -- **_david_**
