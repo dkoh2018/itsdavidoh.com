@@ -39,6 +39,8 @@ here's the effort portion. this means participation of:
 
 for more than 500 hours, or for 100 hours and at least as much as any other individual involved in the activity, including employees, contractors, etc.
 
+this means spending one full day each week on maintenance and booking, which is about 9 hours per week. it's quite manageable.
+
 # 4) run a cost segregation study (irs pub 5653)
 
 commercial property can be depreciated over a 39-year straight line, while residential property can be depreciated over a 27.5-year straight line
@@ -65,8 +67,7 @@ when it's time to sell the rental, you'll be subject to depreciation recapture.
 
 however, you can
 
-use a like-kind exchange to defer the gains (irc section 1031), or
-pass it to heirs for a step-up in basis
+use a like-kind exchange to defer the gains (irc section 1031), or pass it to heirs for a step-up in basis
 
 # again, for this to work...
 
