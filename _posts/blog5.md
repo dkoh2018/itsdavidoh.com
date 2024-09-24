@@ -46,11 +46,13 @@ a cost segregation study reclassifies some building costs into 5, 7, and 15-year
 
 here's a breakdown:
 
-buy a rental for $350,000
-typically, 80% is building and 20% land, so ~$280,000 can be depreciated. a cost segregation study might reclassify 20-40% of the building. let's just say 30% (~$84,000) into 5/15-year property
-use bonus depreciation to expense that 5/15-year property immediately (irs pub 946)
-bonus depreciation is 60% in 2024, leading to ~$52,000 in deductions
-combine this with building depreciation, mortgage interest, or renovations, and it could mean a $55-$60,000 loss in year 1.
+- buy a rental property for $350,000. (typically, 80% is building and 20% is land, so ~$280,000 can be depreciated)
+- conduct a cost segregation study to reclassify 20-40% of the building.
+  - assume 30% (~$84,000) is reclassified into 5/15-year property.
+- use bonus depreciation to expense the 5/15-year property immediately (irs pub 946).
+  - bonus depreciation is 60% in 2024, leading to ~$52,000 in deductions.
+
+this with building depreciation, mortgage interest, or renovations, and it could mean a $55-$60,000 loss in year 1.
 
 # use tax savings for another str
 
