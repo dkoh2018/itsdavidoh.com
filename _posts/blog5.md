@@ -29,7 +29,9 @@ buying a rental property helps in strategically generating losses that offset w-
 
 # 2) make your str active
 
-usually, properties are classified as passive. but if the average stay is less than 7 days, the short-term-rental (str) isn't considered a rental activity (section 1.469-1t(e)(3)(ii))
+usually, properties are classified as passive.
+
+**but** if the average stay is less than 7 days, the short-term-rental (str) isn't considered a rental activity (section 1.469-1t(e)(3)(ii))
 
 # 3) material participation (irs pub. 925)
 
