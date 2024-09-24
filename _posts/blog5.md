@@ -37,8 +37,7 @@ usually, properties are classified as passive.
 
 here's the effort portion. this means participation of:
 
-for more than 500 hours, or
-for 100 hours and at least as much as anyone else
+for more than 500 hours, or for 100 hours and at least as much as any other individual involved in the activity, including employees, contractors, etc.
 
 # 4) run a cost segregation study (irs pub 5653)
 
