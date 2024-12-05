@@ -58,8 +58,6 @@ these might feel small, but they're not. each one is a step toward something gre
 
 ---
 
-don't force yourself to grind harder though.
-
 do what gets you hyped. when you're honest and genuinely excited about your work, you'll attract others who share that same energy. we notice :) that's just how it works - real passion is magnetic.
 
 each project adds to your skillset, every connection opens new doors, and success breeds more success. it's a constant cycle of growth - more value you create, more opportunities.
