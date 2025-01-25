@@ -30,9 +30,19 @@ export default function Index() {
         </div>
         <p className="mb-4">for now...</p>
 
-
+      
+      <Section title="🔫 shop for ammo (2025) - scraped ammoseek.com">
+        <Link
+          href="https://shopammo.streamlit.app"
+          className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200" // Applied Leetcode style
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          18,000 rounds of savings locked and loaded
+        </Link>
       </Section>
 
+      </Section>
       <Section title="🚗 shop for cars (2025) - scraped cars.com">
         <Link
           href="http://carshopping.streamlit.app/"
@@ -40,9 +50,10 @@ export default function Index() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          click here for the app. i hosted it on streamlit
+          540+ sweet rides waiting for you
         </Link>
       </Section>
+
       <Section title="🗓️ google calendar ai on terminal">
         <Link
           href={`/projects`}
