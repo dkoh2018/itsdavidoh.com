@@ -43,14 +43,6 @@ export default function Index() {
           click here for the app. i hosted it on streamlit
         </Link>
       </Section>
-      <Section title="📚 leetcode cheatsheet for young devs">
-        <Link
-          href={`/leetcode`}
-          className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200" // Reverted to original style
-        >
-          checkout this leetcode cheatsheet for young devs
-        </Link>
-      </Section>
       <Section title="🗓️ google calendar ai on terminal">
         <Link
           href={`/projects`}
@@ -60,6 +52,14 @@ export default function Index() {
         </Link>
       </Section>
 
+      <Section title="📚 leetcode cheatsheet for young devs">
+        <Link
+          href={`/leetcode`}
+          className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200" // Reverted to original style
+        >
+          checkout this leetcode cheatsheet for young devs
+        </Link>
+      </Section>
 
       <Section title="blog">
         {firstFivePosts.length > 0 && <PostList posts={firstFivePosts} />}
