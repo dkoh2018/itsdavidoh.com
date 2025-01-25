@@ -45,7 +45,7 @@ export default function Index() {
       </Section>
       <Section title="🚗 shop for cars (2025) - scraped cars.com">
         <Link
-          href="http://carshopping.streamlit.app/"
+          href="http://shopcars.streamlit.app/"
           className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200" // Applied Leetcode style
           target="_blank"
           rel="noopener noreferrer"
