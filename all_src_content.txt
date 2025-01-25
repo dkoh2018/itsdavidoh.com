@@ -1,0 +1,2756 @@
+==== Filename: src/app/The Monospace Web main.css ====
+@import url('https://fonts.cdnfonts.com/css/jetbrains-mono-2');
+
+:root {
+  --font-family: "JetBrains Mono", monospace;
+  --line-height: 1.20rem;
+  --border-thickness: 2px;
+  --text-color: #000;
+  --text-color-alt: #666;
+  --background-color: #fff;
+  --background-color-alt: #eee;
+
+  --font-weight-normal: 500;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
+
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight-normal);
+  font-style: normal;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #fff;
+    --text-color-alt: #aaa;
+    --background-color: #000;
+    --background-color-alt: #111;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+* + * {
+  margin-top: var(--line-height);
+}
+
+html {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: var(--line-height) 2ch;
+  max-width: calc(min(80ch, round(down, 100%, 1ch)));
+  line-height: var(--line-height);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 14px;
+  }
+  body {
+    padding: var(--line-height) 1ch;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  margin: calc(var(--line-height) * 2) 0 var(--line-height);
+  line-height: var(--line-height);
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: calc(2 * var(--line-height));
+  margin-bottom: calc(var(--line-height) * 2);
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+hr {
+  position: relative;
+  display: block;
+  height: var(--line-height);
+  margin: calc(var(--line-height) * 1.5) 0;
+  border: none;
+  color: var(--text-color);
+}
+hr:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: calc(var(--line-height) / 2 - var(--border-thickness));
+  left: 0;
+  width: 100%;
+  border-top: calc(var(--border-thickness) * 3) double var(--text-color);
+  height: 0;
+}
+
+a {
+  text-decoration-thickness: var(--border-thickness);
+}
+
+a:link, a:visited {
+  color: var(--text-color);
+}
+
+p {
+  margin-bottom: var(--line-height);
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}
+em {
+  font-style: italic;
+}
+
+sub {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  vertical-align: sub;
+  line-height: 0;
+  width: calc(1ch / 0.75);
+  font-size: .75rem;
+}
+
+table {
+  position: relative;
+  top: calc(var(--line-height) / 2);
+  width: calc(round(down, 100%, 1ch));
+  border-collapse: collapse;
+  margin: 0 0 calc(var(--line-height) * 2);
+}
+
+th, td {
+  border: var(--border-thickness) solid var(--text-color);
+  padding: 
+    calc((var(--line-height) / 2))
+    calc(1ch - var(--border-thickness) / 2)
+    calc((var(--line-height) / 2) - (var(--border-thickness)))
+  ;
+  line-height: var(--line-height);
+  vertical-align: top;
+  text-align: left;
+}
+table tbody tr:first-child > * {
+  padding-top: calc((var(--line-height) / 2) - var(--border-thickness));
+}
+
+
+th {
+  font-weight: 700;
+}
+.width-min {
+  width: 0%;
+}
+.width-auto {
+  width: 100%;
+}
+
+.header {
+  margin-bottom: calc(var(--line-height) * 2);
+}
+.header h1 {
+  margin: 0;
+}
+.header tr td:last-child {
+  text-align: right;
+}
+
+p {
+  word-break: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+img, video {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+img {
+  font-style: italic;
+  color: var(--text-color-alt);
+}
+
+details {
+  border: var(--border-thickness) solid var(--text-color);
+  padding: calc(var(--line-height) - var(--border-thickness)) 1ch;
+  margin-bottom: var(--line-height);
+}
+
+summary {
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+details[open] summary {
+  margin-bottom: var(--line-height);
+}
+
+details ::marker {
+  display: inline-block;
+  content: '▶';
+  margin: 0;
+}
+details[open] ::marker {
+  content: '▼';
+}
+
+details :last-child {
+  margin-bottom: 0;
+}
+
+pre {
+  white-space: pre;
+  overflow-x: auto;
+  margin: var(--line-height) 0;
+  overflow-y: hidden;
+}
+figure pre {
+  margin: 0;
+}
+
+pre, code {
+  font-family: var(--font-family);
+}
+
+code {
+  font-weight: var(--font-weight-medium);
+}
+
+figure {
+  margin: calc(var(--line-height) * 2) 3ch;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+figcaption {
+  display: block;
+  font-style: italic;
+  margin-top: var(--line-height);
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 var(--line-height);
+}
+
+ul {
+  list-style-type: square;
+  padding: 0 0 0 2ch;
+}
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding: 0;
+}
+ol ul,
+ol ol,
+ul ol,
+ul ul {
+  padding: 0 0 0 3ch;
+  margin: 0;
+}
+ol li:before { 
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+  font-weight: var(--font-weight-medium);
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li::marker {
+  line-height: 0;
+}
+
+::-webkit-scrollbar {
+    height: var(--line-height);
+}
+
+input, button, textarea {
+  border: var(--border-thickness) solid var(--text-color);
+  padding: 
+    calc(var(--line-height) / 2 - var(--border-thickness))
+    calc(1ch - var(--border-thickness));
+  margin: 0;
+  font: inherit;
+  font-weight: inherit;
+  height: calc(var(--line-height) * 2);
+  width: auto;
+  overflow: visible;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+input[type=checkbox] {
+  display: inline-grid;
+  place-content: center;
+  vertical-align: top;
+  width: 2ch;
+  height: var(--line-height);
+  cursor: pointer;
+}
+input[type=checkbox]:checked:before {
+  content: "";
+  width: 1ch;
+  height: calc(var(--line-height) / 2);
+  background: var(--text-color);
+}
+
+button:focus, input:focus {
+  --border-thickness: 3px;
+  outline: none;
+}
+
+input {
+  width: calc(round(down, 100%, 1ch));
+}
+::placeholder {
+  color: var(--text-color-alt);
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: var(--text-color-alt);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--background-color-alt);
+}
+button:active {
+  transform: translate(2px, 2px);
+}
+
+label {
+  display: block;
+  width: calc(round(down, 100%, 1ch));
+  height: auto;
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+}
+
+label input {
+  width: 100%;
+}
+
+.tree, .tree ul {
+  position: relative;
+  padding-left: 0;
+  list-style-type: none;
+  line-height: var(--line-height);
+}
+.tree ul {
+  margin: 0;
+}
+.tree ul li {
+  position: relative;
+  padding-left: 1.5ch;
+  margin-left: 1.5ch;
+  border-left: var(--border-thickness) solid var(--text-color);
+}
+.tree ul li:before {
+  position: absolute;
+  display: block;
+  top: calc(var(--line-height) / 2);
+  left: 0;
+  content: "";
+  width: 1ch;
+  border-bottom: var(--border-thickness) solid var(--text-color);
+}
+.tree ul li:last-child {
+  border-left: none;
+}
+.tree ul li:last-child:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  content: "";
+  height: calc(var(--line-height) / 2);
+  border-left: var(--border-thickness) solid var(--text-color);
+}
+
+.grid {
+  --grid-cells: 0;
+  display: flex;
+  gap: 1ch;
+  width: calc(round(down, 100%, (1ch * var(--grid-cells)) - (1ch * var(--grid-cells) - 1)));
+  margin-bottom: var(--line-height);
+}
+
+.grid > *,
+.grid > input {
+  flex: 0 0 calc(round(down, (100% - (1ch * (var(--grid-cells) - 1))) / var(--grid-cells), 1ch));
+}
+.grid:has(> :last-child:nth-child(1)) { --grid-cells: 1; }
+.grid:has(> :last-child:nth-child(2)) { --grid-cells: 2; }
+.grid:has(> :last-child:nth-child(3)) { --grid-cells: 3; }
+.grid:has(> :last-child:nth-child(4)) { --grid-cells: 4; }
+.grid:has(> :last-child:nth-child(5)) { --grid-cells: 5; }
+.grid:has(> :last-child:nth-child(6)) { --grid-cells: 6; }
+.grid:has(> :last-child:nth-child(7)) { --grid-cells: 7; }
+.grid:has(> :last-child:nth-child(8)) { --grid-cells: 8; }
+.grid:has(> :last-child:nth-child(9)) { --grid-cells: 9; }
+
+/* DEBUG UTILITIES */
+
+.debug .debug-grid {
+  --color: color-mix(in srgb, var(--text-color) 10%, var(--background-color) 90%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image:
+    repeating-linear-gradient(var(--color) 0 1px, transparent 1px 100%),
+    repeating-linear-gradient(90deg, var(--color) 0 1px, transparent 1px 100%);
+  background-size: 1ch var(--line-height);
+  margin: 0;
+}
+
+.debug .off-grid {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.debug-toggle-label {
+  text-align: right;
+}
+----
+
+==== Filename: src/app/posts/page.tsx ====
+import { getAllPosts } from "../../lib/api";
+import { PostList } from "../_components/posts/post-list";
+import { Section } from "../_components/section";
+import Link from "next/link";
+
+export default async function AllPosts() {
+  const allPosts = getAllPosts();
+
+  return (
+    <>
+      <Section title="all posts">
+        <div className="mb-4">
+          <Link href={`/`} className="text-miami-blue underline">
+            back to main
+          </Link>
+        </div>
+        <div className="mt-10">{allPosts.length > 0 && <PostList posts={allPosts} />}</div>
+      </Section>
+    </>
+  );
+}
+----
+
+==== Filename: src/app/posts/[slug]/page.tsx ====
+import { getAllPosts, getPostBySlug } from "../../../lib/api";
+import markdownToHtml from "../../../lib/markdownToHtml";
+import Container from "../../_components/container";
+import { PostBody } from "../../_components/posts/post-body";
+import { PostHeader } from "../../_components/posts/post-header";
+import { PostTitle } from "../../_components/posts/post-title";
+import { Section } from "../../_components/section";
+
+interface Params {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function Post({ params }: Params) {
+  const post = getPostBySlug(params.slug);
+
+  const content = await markdownToHtml(post.content || "");
+
+  return (
+    <>
+      <Section title="">
+        <article className="mb-32 mt-16">
+          <PostHeader
+            title={post.title}
+            coverImage={post.coverImage}
+            date={post.date}
+          />
+          <PostBody content={content} />
+        </article>
+      </Section>
+    </>
+  );
+}
+----
+
+==== Filename: src/app/_styles/markdown-styles.module.css ====
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 1.5em;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding-left: 1.5em;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply sm:text-2xl sm:mt-8 sm:mb-3;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply sm:text-xl sm:mt-6 sm:mb-3;
+}
+
+.markdown p,
+.markdown li {
+  @apply text-base;
+  @apply sm:text-sm;
+  margin-bottom: 0.75rem;
+}
+
+.markdown a {
+  @apply text-blue-600 underline;
+}
+
+.markdown a:hover {
+  @apply text-blue-800;
+}
+
+@media (max-width: 640px) {
+  .markdown {
+    @apply text-sm leading-relaxed;
+  }
+
+  .markdown h2 {
+    @apply text-xl mt-8 mb-3;
+  }
+
+  .markdown h3 {
+    @apply text-lg mt-6 mb-3;
+  }
+
+  .markdown p,
+  .markdown li {
+    @apply text-xs;
+  }
+}
+----
+
+==== Filename: src/app/leetcode/(code)/binarysearch.tsx ====
+import React from "react";
+import { Section } from "../../_components/section";
+import Link from "next/link";
+
+const binarySearchCode = `
+def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1  # Target not found
+`;
+
+export default function BinarySearch() {
+  return (
+    <Section title="Binary Search">
+      <div className="space-y-6">
+        <p className="text-lg">
+          Binary search is an efficient algorithm for searching a sorted array by repeatedly
+          dividing the search interval in half.
+        </p>
+
+        <div className="bg-gray-100 p-4 rounded-lg">
+          <h2 className="text-xl font-semibold mb-2">Python Implementation</h2>
+          <pre className="bg-gray-200 p-2 rounded">
+            <code>{binarySearchCode}</code>
+          </pre>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold mb-2">How it works:</h2>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Initialize two pointers, <code>left</code> and <code>right</code>, to the start and
+              end of the array.
+            </li>
+            <li>
+              While <code>left</code> is less than or equal to <code>right</code>:
+            </li>
+            <li>
+              Calculate the middle index <code>mid</code>.
+            </li>
+            <li>If the middle element is the target, return its index.</li>
+            <li>If the target is greater, search the right half.</li>
+            <li>If the target is smaller, search the left half.</li>
+            <li>If the target is not found, return -1.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold mb-2">Time Complexity:</h2>
+          <p>O(log n) - where n is the number of elements in the array.</p>
+        </div>
+
+        <Link href="/leetcode" className="text-miami-blue underline">
+          Back to LeetCode Cheatsheet
+        </Link>
+      </div>
+    </Section>
+  );
+}
+----
+
+==== Filename: src/app/leetcode/page.tsx ====
+import { Section } from "../_components/section";
+import Link from "next/link";
+
+const leetcodeStrategies = [
+  { condition: "If input array is sorted", strategies: ["Binary Search", "Two Pointers"] },
+  { condition: "If given a tree", strategies: ["DFS", "BFS"] },
+  { condition: "If asked for all permutations/subsets", strategies: ["Backtracking"] },
+  { condition: "If given a graph", strategies: ["DFS", "BFS"] },
+  { condition: "If given a linked list", strategies: ["Two Pointers"] },
+  { condition: "If Recursion is banned", strategies: ["Stack"] },
+  {
+    condition: "If asked for max/min subarray/subsets/options",
+    strategies: ["Dynamic Programming"],
+  },
+  { condition: "If asked for top/least K ITEMS", strategies: ["Heap"] },
+  { condition: "If asked for common strings", strategies: ["Map", "Trie"] },
+  { condition: "If need to keep count of distinct elements", strategies: ["Map", "Set"] },
+  {
+    condition: "Else",
+    strategies: [
+      "Map/Set for O(1) time & O(n) space",
+      "Sort input for O(nLogn) time and O(1) space",
+    ],
+  },
+];
+
+export default function AllPosts() {
+  return (
+    <Section title="">
+      <ul className="list-disc pl-5 mb-6">
+        {leetcodeStrategies.map((item, index) => (
+          <li key={index} className="mb-2">
+            <strong>{item.condition}:</strong>
+            <ul className="list-circle pl-5 mt-1">
+              {item.strategies.map((strategy, strategyIndex) => (
+                <li key={strategyIndex}>{strategy}</li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+      <Link href={`/`} className="text-miami-blue underline">
+        Back to main
+      </Link>
+    </Section>
+  );
+}
+----
+
+==== Filename: src/app/projects/page.tsx ====
+import { Section } from "../_components/section";
+import Link from "next/link";
+
+export default function Projects() {
+  return (
+    <Section title="Projects">
+      <div className="flex flex-col">
+        <Link href="/" className="text-miami-blue underline mb-8">
+          back to main
+        </Link>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ixGGdUoFKbE?si=UN4VOnBy5RkrASOR"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="w-full h-96 mb-8"
+        />
+        <h2 className="text-xl font-bold mb-4">google cal on your terminal</h2>
+        <p className="mb-4">
+          this project combines the gcsa package, google calendar api, and openai to create an
+          intelligent, command-line google calendar manager. it leverages natural language
+          processing, allowing users to manage their calendar through simple voice commands or text
+          input. say goodbye to clicking buttons - just speak or type your requests, and the system
+          will handle the rest.
+        </p>
+        <h3 className="text-lg font-semibold mb-2">features:</h3>
+        <ul className="list-disc list-inside mb-4">
+          <li>add new events to your google calendar using natural language</li>
+          <li>delete events from your calendar with simple commands</li>
+          <li>view existing events in a user-friendly format</li>
+          <li>manage calendar settings effortlessly</li>
+          <li>ai-powered event suggestions and optimizations</li>
+        </ul>
+        <h3 className="text-lg font-semibold mb-2">requirements:</h3>
+        <ul className="list-disc list-inside mb-4">
+          <li>python 3.x</li>
+          <li>
+            <Link
+              href="https://developers.google.com/calendar/api/quickstart/python"
+              className="text-miami-blue underline"
+            >
+              google calendar api
+            </Link>{" "}
+            credentials.json (oauth)
+          </li>
+          <li>
+            <Link
+              href="https://google-calendar-simple-api.readthedocs.io/en/latest/"
+              className="text-miami-blue underline"
+            >
+              gcsa package
+            </Link>{" "}
+            (google calendar simple api)
+          </li>
+          <li>
+            openai api key (follow the{" "}
+            <Link
+              href="https://platform.openai.com/docs/api-reference/authentication"
+              className="text-miami-blue underline"
+            >
+              openai documentation
+            </Link>{" "}
+            for setup)
+          </li>
+        </ul>
+        <h3 className="text-lg font-semibold mb-2">setting up:</h3>
+        <ol className="list-decimal list-inside mb-4">
+          <li>clone the repository from github</li>
+          <li>
+            install required packages: <code>pip install -r requirements.txt</code>
+          </li>
+          <li>set up google calendar api credentials and save as credentials.json</li>
+          <li>setup openai client</li>
+        </ol>
+        <h3 className="text-lg font-semibold mb-2">usage:</h3>
+        <p className="mb-4">run the main script:</p>
+        <pre className="bg-gray-100 p-2 mb-4">
+          <code>python main.py</code>
+        </pre>
+        <p className="mb-4">
+          follow the on-screen prompts to interact with your google calendar using natural language
+          commands. the ai will interpret your inputs and perform the appropriate actions.
+        </p>
+        <h3 className="text-lg font-semibold mb-2">file structure:</h3>
+        <ul className="list-disc list-inside mb-4">
+          <li>main.py: entry point of the application</li>
+          <li>add_new_event.py: handles adding new events to the calendar</li>
+          <li>delete_an_event.py: manages event deletion</li>
+          <li>view_events.py: displays calendar events</li>
+          <li>settings.py: manages calendar settings</li>
+        </ul>
+        <h3 className="text-lg font-semibold mb-2">desktop shortcut (macos):</h3>
+        <p className="mb-4">to create a desktop shortcut for easy access, follow these steps:</p>
+        <ol className="list-decimal list-inside mb-4">
+          <li>open terminal and navigate to your desktop</li>
+          <li>
+            create a new file: <code>nano run_gcal.command</code>
+          </li>
+          <li>
+            add the following content:
+            <pre className="bg-gray-100 p-2 mt-2 mb-2">
+              <code>#!/bin/bash cd /path/to/your/project python3 main.py</code>
+            </pre>
+          </li>
+          <li>save and exit (ctrl + o, then ctrl + x)</li>
+          <li>
+            make the file executable: <code>chmod +x run_gcal.command</code>
+          </li>
+        </ol>
+        <p className="mb-4">
+          now you can double-click the run_gcal.command file on your desktop to launch the
+          application.
+        </p>
+        <p className="mb-10">
+          <a
+            href="https://github.com/dkoh2018/TerminalGoogleCal"
+            className="text-miami-blue underline"
+          >
+            check out the github repo
+          </a>
+        </p>
+      </div>
+    </Section>
+  );
+}
+----
+
+==== Filename: src/app/img/emaillogo.svg ====
+<?xml version="1.0" ?><svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Style_2"><g><g><path d="M16,31.625c-8.616,0-15.625-7.01-15.625-15.625C0.375,7.384,7.384,0.375,16,0.375     c8.615,0,15.625,7.009,15.625,15.625C31.625,24.615,24.615,31.625,16,31.625z" fill="#FFFFFF"/><path d="M16,0.75c8.409,0,15.25,6.841,15.25,15.25S24.409,31.25,16,31.25S0.75,24.409,0.75,16S7.591,0.75,16,0.75      M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0L16,0z" fill="#E5E5E5"/></g></g><g><polygon fill="#333333" points="6.518,21.815 11.707,15.291 6.518,12.119   "/><polygon fill="#333333" points="19.5,15.746 15.989,17.908 12.472,15.758 7.11,22.5 24.867,22.5   "/><polygon fill="#333333" points="15.988,16.864 25.482,11.017 25.482,9.5 6.518,9.5 6.518,11.076   "/><polygon fill="#333333" points="20.263,15.276 25.482,21.843 25.482,12.062   "/></g></g></svg>----
+
+==== Filename: src/app/img/githublogo.svg ====
+<?xml version="1.0" ?><svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_3"><g><g><path d="M32.001,63.251c-17.23,0-31.25-14.02-31.25-31.25s14.02-31.25,31.25-31.25s31.25,14.02,31.25,31.25     S49.231,63.251,32.001,63.251z" fill="#FFFFFF"/><path d="M32,1.5c16.818,0,30.5,13.682,30.5,30.5S48.818,62.5,32,62.5S1.5,48.818,1.5,32S15.182,1.5,32,1.5 M32,0     C14.327,0,0,14.327,0,32c0,17.673,14.327,32,32,32s32-14.327,32-32C64,14.327,49.673,0,32,0L32,0z" fill="#E5E5E5"/></g></g><g><g id="Outline_Filled_5_"><path d="M38.592,50.166h-4.84h-4.844c0,0,0.014-2.874,0-4.844c-6.629,1.428-8.479-3.633-8.479-3.633     c-1.21-2.423-2.423-3.633-2.423-3.633c-2.423-1.438,0-1.21,0-1.21c2.423,0,3.633,2.423,3.633,2.423     c2.126,3.609,5.908,3.028,7.266,2.423c0-1.21,0.53-3.042,1.21-3.633c-5.29-0.595-9.693-3.633-9.693-9.689     s1.216-7.266,2.427-8.479c-0.244-0.597-1.259-2.805,0.037-6.056c0,0,2.38,0,4.803,3.633c1.2-1.2,4.844-1.21,6.056-1.21     c1.208,0,4.854,0.01,6.054,1.21c2.423-3.633,4.809-3.633,4.809-3.633c1.296,3.251,0.282,5.459,0.037,6.056     c1.21,1.21,2.423,2.423,2.423,8.479s-4.397,9.092-9.689,9.689c0.682,0.591,1.21,2.675,1.21,3.633L38.592,50.166L38.592,50.166z" fill="#333333" id="Cat_1_"/></g></g></g></svg>----
+
+==== Filename: src/app/img/twitterlogo.svg ====
+<?xml version="1.0" ?><svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><g><path d="M16,31.625c-8.616,0-15.625-7.01-15.625-15.625S7.384,0.375,16,0.375c8.615,0,15.625,7.01,15.625,15.625     S24.615,31.625,16,31.625z" fill="#FFFFFF"/><path d="M16,0.75c8.409,0,15.25,6.841,15.25,15.25S24.409,31.25,16,31.25S0.75,24.409,0.75,16S7.591,0.75,16,0.75      M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0L16,0z" fill="#E5E5E5"/></g></g><path d="M18.226,8.886c-1.59,0.579-2.595,2.071-2.481,3.704l0.038,0.63l-0.636-0.077   c-2.315-0.296-4.338-1.299-6.056-2.984l-0.84-0.836L8.036,9.94c-0.458,1.376-0.165,2.83,0.789,3.808   c0.509,0.54,0.394,0.617-0.483,0.296c-0.305-0.103-0.573-0.18-0.598-0.141c-0.089,0.09,0.216,1.26,0.458,1.724   c0.331,0.644,1.005,1.273,1.743,1.647l0.624,0.296L9.83,17.581c-0.712,0-0.738,0.013-0.661,0.284   c0.254,0.836,1.259,1.724,2.379,2.11l0.789,0.27l-0.687,0.412c-1.018,0.593-2.214,0.927-3.41,0.951   c-0.573,0.013-1.044,0.064-1.044,0.103c0,0.128,1.553,0.848,2.455,1.132c2.71,0.836,5.929,0.475,8.346-0.952   c1.718-1.016,3.435-3.036,4.237-4.992c0.433-1.041,0.865-2.945,0.865-3.858c0-0.592,0.038-0.669,0.75-1.376   c0.42-0.412,0.814-0.862,0.891-0.99c0.128-0.245,0.114-0.245-0.534-0.026c-1.081,0.386-1.234,0.335-0.699-0.244   c0.394-0.412,0.865-1.158,0.865-1.376c0-0.038-0.191,0.026-0.407,0.141c-0.229,0.129-0.738,0.322-1.12,0.437l-0.687,0.219   L21.535,9.4c-0.344-0.231-0.826-0.489-1.081-0.566C19.804,8.654,18.812,8.68,18.226,8.886z" fill="#333333"/></g></svg>----
+
+==== Filename: src/app/img/linkedinlogo.svg ====
+<?xml version="1.0" ?><svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><g><path d="M16.005,31.614c-8.615,0-15.625-7.01-15.625-15.625S7.39,0.364,16.005,0.364S31.63,7.374,31.63,15.989     S24.62,31.614,16.005,31.614z" fill="#FFFFFF"/><path d="M16.005,0.739c8.409,0,15.25,6.841,15.25,15.25s-6.841,15.25-15.25,15.25s-15.25-6.841-15.25-15.25     S7.596,0.739,16.005,0.739 M16.005-0.011c-8.837,0-16,7.163-16,16c0,8.836,7.163,16,16,16s16-7.164,16-16     C32.005,7.153,24.842-0.011,16.005-0.011L16.005-0.011z" fill="#E5E5E5"/></g></g><path d="M24.299,22.932v-6.137c0-3.288-1.755-4.818-4.096-4.818c-1.889,0-2.735,1.039-3.206,1.768v-1.517h-3.558   c0.047,1.005,0,10.704,0,10.704h3.558v-5.978c0-0.319,0.023-0.639,0.117-0.867c0.257-0.639,0.842-1.301,1.825-1.301   c1.288,0,1.803,0.981,1.803,2.42v5.727L24.299,22.932L24.299,22.932z M9.69,10.767c1.24,0,2.013-0.823,2.013-1.85   c-0.023-1.05-0.773-1.849-1.99-1.849S7.701,7.866,7.701,8.916c0,1.028,0.772,1.85,1.967,1.85H9.69z M11.469,22.932V12.228H7.912   v10.704H11.469z" fill="#333333"/></g></svg>----
+
+==== Filename: src/app/_components/ui/lightboard.tsx ====
+"use client";
+
+import React, {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+
+export type PatternCell = "0" | "1" | "2" | "3";
+type Pattern = PatternCell[][];
+
+interface LightBoardProps {
+  gap?: number;
+  rows?: number;
+  lightSize?: number;
+  updateInterval?: number;
+  text: string;
+  font?: "default" | "7segment";
+  colors?: Partial<LightBoardColors>;
+  disableDrawing?: boolean;
+  controlledDrawState?: PatternCell;
+  onDrawStateChange?: (newState: PatternCell) => void;
+  controlledHoverState?: boolean;
+  onHoverStateChange?: (isHovered: boolean) => void;
+}
+
+interface LightBoardColors {
+  drawLine: string; // Color for moderately lit text
+  background: string; // Color for inactive lights
+  textDim: string; // Color for dimly lit text
+  textBright: string; // Color for brightly lit text
+}
+
+const defaultColors: LightBoardColors = {
+  drawLine: "rgba(160, 160, 200, 0.7)",
+  background: "rgba(30, 30, 40, 0.3)",
+  textDim: "rgba(100, 100, 140, 0.5)",
+  textBright: "rgba(220, 220, 255, 0.9)",
+};
+
+// This function takes some text and makes sure there's enough space between words
+const normalizeText = (
+  text: string,
+  minSpacing: number = 3
+): string => {
+  const trimmed = text.trim().toUpperCase(); // Remove extra spaces and make all letters big
+  const spacedText = ` ${trimmed} `.replace(
+    /\s+/g,
+    " ".repeat(minSpacing)
+  ); // Add spaces between words
+  return spacedText;
+};
+
+// This function turns text into a pattern of lights
+const textToPattern = (
+  text: string,
+  rows: number,
+  columns: number,
+  font: { [key: string]: Pattern }
+): Pattern => {
+  // First, we make the letters bigger if we have more rows
+  const letterHeight = font["A"].length;
+  const scale = Math.max(1, Math.floor(rows / letterHeight));
+
+  // We make each letter in the font bigger
+  const scaledFont = Object.fromEntries(
+    Object.entries(font).map(([char, pattern]) => [
+      char,
+      pattern
+        .flatMap((row) => Array(scale).fill(row))
+        .map((row) =>
+          row.flatMap((cell: PatternCell) =>
+            Array(scale).fill(cell === "1" ? "1" : "3")
+          )
+        ),
+    ])
+  );
+  // We add spaces to the text
+  const normalizedText = normalizeText(text);
+
+  // We turn each letter into a pattern of lights
+  const letterPatterns = normalizedText
+    .split("")
+    .map((char) => scaledFont[char] || scaledFont[" "]);
+
+  // We combine all the letter patterns into one big pattern
+  let fullPattern: Pattern = Array(scaledFont["A"].length)
+    .fill([])
+    .map(() => []);
+
+  letterPatterns.forEach((letterPattern) => {
+    fullPattern = fullPattern.map((row, i) => [
+      ...row,
+      ...letterPattern[i],
+    ]);
+  });
+
+  // We add empty space above and below the pattern to center it
+  const totalRows = rows;
+  const patternRows = fullPattern.length;
+  const topPadding = Math.floor((totalRows - patternRows) / 2);
+  const bottomPadding = totalRows - patternRows - topPadding;
+
+  const paddedPattern = [
+    ...Array(topPadding).fill(
+      Array(fullPattern[0].length).fill("0")
+    ),
+    ...fullPattern,
+    ...Array(bottomPadding).fill(
+      Array(fullPattern[0].length).fill("0")
+    ),
+  ];
+
+  // We make the pattern wider by repeating it
+  const extendedPattern = paddedPattern.map((row) => {
+    while (row.length < columns * 2) {
+      row = [...row, ...row];
+    }
+    return row;
+  });
+
+  return extendedPattern;
+};
+
+// This function decides what color each light should be
+function getLightColor(
+  state: PatternCell,
+  colors: Partial<LightBoardColors>
+): string {
+  const mergedColors = { ...defaultColors, ...colors };
+
+  switch (state) {
+    case "1":
+      return mergedColors.textDim;
+    case "2":
+      return mergedColors.drawLine;
+    case "3":
+      return mergedColors.textBright;
+    default:
+      return mergedColors.background;
+  }
+}
+
+const defaultDrawState: PatternCell = "2";
+
+function LightBoard({
+  text,
+  gap = 1,
+  lightSize = 4,
+  rows = 5,
+  font = "default",
+  updateInterval = 10,
+  colors = {},
+  controlledDrawState,
+  disableDrawing = true,
+  controlledHoverState,
+  onHoverStateChange,
+}: LightBoardProps) {
+  // We decide how many rows and columns of lights we need
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [columns, setColumns] = useState(0);
+  const mergedColors = { ...defaultColors, ...colors };
+
+  // We choose which font to use for our text
+  const selectedFont =
+    font === "default" ? defaultFont : sevenSegmentFont;
+  // We keep track of whether the mouse is over our board
+
+  // We keep track of whether we're drawing on the board
+  const [isDrawing, setIsDrawing] = useState(false);
+  // Use controlled state if provided, otherwise use local state
+  const [internalHoverState, setInternalHoverState] =
+    useState(false);
+  // This is the brightness of the lights we're drawing (0 to 3)
+
+  // This is our pattern of lights that make up the text
+  const [basePattern, setBasePattern] = useState<Pattern>(() => {
+    return textToPattern(
+      normalizeText(text),
+      rows,
+      columns,
+      selectedFont
+    );
+  });
+  // This helps us move the text across the board
+  const [offset, setOffset] = useState(0);
+  // This is how we draw on our light board (it's like a special piece of paper)
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  // This remembers where we last drew on the board
+  const lastDrawnPosition = useRef<{ x: number; y: number } | null>(
+    null
+  );
+  // This helps us know when to update our animation
+  const [lastUpdateTime, setLastUpdateTime] = useState(0);
+
+  const drawState =
+    controlledDrawState !== undefined
+      ? controlledDrawState
+      : defaultDrawState;
+
+  const isHovered =
+    controlledHoverState !== undefined
+      ? controlledHoverState
+      : internalHoverState;
+
+  // Calculate the number of columns based on container width
+  useEffect(() => {
+    const calculateColumns = () => {
+      if (containerRef.current) {
+        const containerWidth = containerRef.current.offsetWidth;
+        const calculatedColumns = Math.floor(
+          containerWidth / (lightSize + gap)
+        );
+        setColumns(calculatedColumns);
+      }
+    };
+
+    calculateColumns();
+    window.addEventListener("resize", calculateColumns);
+    return () =>
+      window.removeEventListener("resize", calculateColumns);
+  }, [lightSize, gap]);
+
+  // This function draws all our lights on the board
+  const drawToCanvas = useCallback(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const patternWidth = basePattern[0].length;
+
+    basePattern.forEach((row, rowIndex) => {
+      for (let colIndex = 0; colIndex < columns; colIndex++) {
+        const patternColIndex = (colIndex + offset) % patternWidth;
+        const state = row[patternColIndex];
+
+        ctx.fillStyle = getLightColor(
+          state as PatternCell,
+          mergedColors
+        );
+        ctx.beginPath();
+        ctx.arc(
+          colIndex * (lightSize + gap) + lightSize / 2,
+          rowIndex * (lightSize + gap) + lightSize / 2,
+          lightSize / 2,
+          0,
+          2 * Math.PI
+        );
+        ctx.fill();
+      }
+    });
+  }, [basePattern, offset, columns, lightSize, gap, mergedColors]);
+
+  // This makes our text move across the board
+  useEffect(() => {
+    let animationFrameId: number;
+
+    const animate = () => {
+      if (!isHovered) {
+        // If the mouse isn't over the board, we move the text
+        setOffset(
+          (prevOffset) => (prevOffset + 1) % basePattern[0].length
+        );
+      }
+      drawToCanvas();
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    animationFrameId = requestAnimationFrame(animate);
+
+    // We clean up our animation when we're done
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [basePattern, isHovered, drawToCanvas]);
+
+  // This updates our light pattern when the text changes
+  useEffect(() => {
+    setBasePattern(
+      textToPattern(normalizeText(text), rows, columns, selectedFont)
+    );
+  }, [text, rows, columns, selectedFont]);
+
+  // This is another way we make our text move
+  const animate = useCallback(() => {
+    const currentTime = Date.now();
+    if (
+      currentTime - lastUpdateTime >= updateInterval &&
+      !isHovered
+    ) {
+      setOffset(
+        (prevOffset) => (prevOffset + 1) % basePattern[0].length
+      );
+      setLastUpdateTime(currentTime);
+    }
+    drawToCanvas();
+  }, [
+    updateInterval,
+    isHovered,
+    basePattern,
+    drawToCanvas,
+    lastUpdateTime,
+  ]);
+
+  // This keeps our animation going
+  useEffect(() => {
+    let animationFrameId: number;
+
+    const loop = () => {
+      animate();
+      animationFrameId = requestAnimationFrame(loop);
+    };
+
+    animationFrameId = requestAnimationFrame(loop);
+
+    // We clean up our animation when we're done
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [animate]);
+
+  // This function helps us draw a line on our light board
+  const drawLine = useCallback(
+    (startX: number, startY: number, endX: number, endY: number) => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return;
+
+      // We figure out which direction we're drawing
+      const dx = Math.abs(endX - startX);
+      const dy = Math.abs(endY - startY);
+      const sx = startX < endX ? 1 : -1;
+      const sy = startY < endY ? 1 : -1;
+      let err = dx - dy;
+
+      // We keep drawing until we reach the end of our line
+      while (true) {
+        // We figure out which light we're on
+        const colIndex = Math.floor(startX / (lightSize + gap));
+        const rowIndex = Math.floor(startY / (lightSize + gap));
+
+        // If we're still on the board...
+        if (
+          rowIndex >= 0 &&
+          rowIndex < rows &&
+          colIndex >= 0 &&
+          colIndex < columns
+        ) {
+          // We figure out which light to change in our pattern
+          const actualColIndex =
+            (colIndex + offset) % basePattern[0].length;
+
+          // If this light isn't already the brightness we want...
+          if (basePattern[rowIndex][actualColIndex] !== drawState) {
+            // We update our pattern of lights
+            setBasePattern((prevPattern) => {
+              const newPattern = [...prevPattern];
+              newPattern[rowIndex] = [...newPattern[rowIndex]];
+              newPattern[rowIndex][actualColIndex] = drawState;
+              return newPattern;
+            });
+
+            // We draw the new light on our board
+            ctx.fillStyle = getLightColor(drawState, mergedColors);
+
+            ctx.beginPath();
+            ctx.arc(
+              colIndex * (lightSize + gap) + lightSize / 2,
+              rowIndex * (lightSize + gap) + lightSize / 2,
+              lightSize / 2,
+              0,
+              2 * Math.PI
+            );
+            ctx.fill();
+          }
+        }
+
+        // If we've reached the end of our line, we stop
+        if (startX === endX && startY === endY) break;
+
+        // We figure out where to draw next
+        const e2 = 2 * err;
+        if (e2 > -dy) {
+          err -= dy;
+          startX += sx;
+        }
+        if (e2 < dx) {
+          err += dx;
+          startY += sy;
+        }
+      }
+    },
+    [
+      basePattern,
+      columns,
+      drawState,
+      gap,
+      lightSize,
+      offset,
+      rows,
+      mergedColors,
+    ]
+  );
+
+  // _________DRAWING HANDLING_________
+
+  const handleInteractionStart = useCallback(
+    (x: number, y: number) => {
+      if (disableDrawing) return;
+      setIsDrawing(true);
+      lastDrawnPosition.current = null;
+      drawLine(x, y, x, y);
+    },
+    [disableDrawing, drawLine]
+  );
+
+  const handleInteractionMove = useCallback(
+    (x: number, y: number) => {
+      if (!isDrawing || disableDrawing) return;
+      if (lastDrawnPosition.current) {
+        drawLine(
+          lastDrawnPosition.current.x,
+          lastDrawnPosition.current.y,
+          x,
+          y
+        );
+      } else {
+        drawLine(x, y, x, y);
+      }
+      lastDrawnPosition.current = { x, y };
+    },
+    [isDrawing, disableDrawing, drawLine]
+  );
+
+  const handleInteractionEnd = useCallback(() => {
+    setIsDrawing(false);
+    lastDrawnPosition.current = null;
+  }, []);
+
+  // This happens when we press the mouse button to start drawing
+  const handleMouseDown = useCallback(
+    (event: React.MouseEvent<HTMLCanvasElement>) => {
+      const canvas = event.currentTarget;
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      handleInteractionStart(x, y);
+    },
+    [handleInteractionStart]
+  );
+
+  const handleMouseMove = useCallback(
+    (event: React.MouseEvent<HTMLCanvasElement>) => {
+      const canvas = event.currentTarget;
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      handleInteractionMove(x, y);
+    },
+    [handleInteractionMove]
+  );
+
+  const handleMouseUp = handleInteractionEnd;
+
+  const handleTouchStart = useCallback(
+    (event: React.TouchEvent<HTMLCanvasElement>) => {
+      event.preventDefault();
+      const touch = event.touches[0];
+      const canvas = event.currentTarget;
+      const rect = canvas.getBoundingClientRect();
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      handleInteractionStart(x, y);
+    },
+    [handleInteractionStart]
+  );
+
+  const handleTouchMove = useCallback(
+    (event: React.TouchEvent<HTMLCanvasElement>) => {
+      event.preventDefault();
+      const touch = event.touches[0];
+      const canvas = event.currentTarget;
+      const rect = canvas.getBoundingClientRect();
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      handleInteractionMove(x, y);
+    },
+    [handleInteractionMove]
+  );
+
+  const handleTouchEnd = handleInteractionEnd;
+
+  // Update hover state
+  const updateHoverState = useCallback(
+    (newState: boolean) => {
+      if (controlledHoverState === undefined) {
+        setInternalHoverState(newState);
+      }
+      onHoverStateChange?.(newState);
+    },
+    [controlledHoverState, onHoverStateChange]
+  );
+
+  return (
+    <div ref={containerRef} style={{ width: "100%" }}>
+      {columns > 0 && (
+        <canvas
+          ref={canvasRef}
+          width={columns * (lightSize + gap)}
+          height={rows * (lightSize + gap)}
+          onMouseDown={!disableDrawing ? handleMouseDown : undefined}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() =>
+            controlledHoverState === undefined &&
+            updateHoverState(true)
+          }
+          onMouseLeave={() => {
+            controlledHoverState === undefined &&
+              updateHoverState(false);
+            handleInteractionEnd();
+          }}
+          onTouchStart={
+            !disableDrawing ? handleTouchStart : undefined
+          }
+          onTouchEnd={handleTouchEnd}
+          onTouchMove={handleTouchMove}
+          style={{
+            cursor: disableDrawing ? "default" : "pointer",
+            touchAction: "none",
+            userSelect: "none",
+          }}
+        />
+      )}
+    </div>
+  );
+}
+
+export { LightBoard };
+
+const sevenSegmentFont: { [key: string]: Pattern } = {
+  "0": [
+    ["1", "1", "1"],
+    ["1", "0", "1"],
+    ["1", "0", "1"],
+    ["1", "0", "1"],
+    ["1", "1", "1"],
+  ],
+  "1": [
+    ["0", "0", "1"],
+    ["0", "0", "1"],
+    ["0", "0", "1"],
+    ["0", "0", "1"],
+    ["0", "0", "1"],
+  ],
+  // Add more digits as needed
+};
+
+const defaultFont: { [key: string]: Pattern } = {
+  " ": [
+    ["0", "0", "0", "0"],
+    ["0", "0", "0", "0"],
+    ["0", "0", "0", "0"],
+    ["0", "0", "0", "0"],
+    ["0", "0", "0", "0"],
+  ],
+  A: [
+    ["0", "1", "1", "0", "0"],
+    ["1", "0", "0", "1", "0"],
+    ["1", "1", "1", "1", "0"],
+    ["1", "0", "0", "1", "0"],
+    ["1", "0", "0", "1", "0"],
+  ],
+  B: [
+    ["1", "1", "1", "0", "0"],
+    ["1", "0", "0", "1", "0"],
+    ["1", "1", "1", "0", "0"],
+    ["1", "0", "0", "1", "0"],
+    ["1", "1", "1", "0", "0"],
+  ],
+  C: [
+    ["0", "1", "1", "1", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["0", "1", "1", "1", "0"],
+  ],
+  D: [
+    ["1", "1", "1", "0"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "1", "1", "0"],
+  ],
+  E: [
+    ["1", "1", "1", "1", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "1", "1", "0", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "1", "1", "1", "0"],
+  ],
+  F: [
+    ["1", "1", "1", "1"],
+    ["1", "0", "0", "0"],
+    ["1", "1", "1", "0"],
+    ["1", "0", "0", "0"],
+    ["1", "0", "0", "0"],
+  ],
+  G: [
+    ["0", "1", "1", "1"],
+    ["1", "0", "0", "0"],
+    ["1", "0", "1", "1"],
+    ["1", "0", "0", "1"],
+    ["0", "1", "1", "1"],
+  ],
+  H: [
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "1", "1", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+  ],
+  I: [
+    ["1", "1", "1"],
+    ["0", "1", "0"],
+    ["0", "1", "0"],
+    ["0", "1", "0"],
+    ["1", "1", "1"],
+  ],
+  J: [
+    ["0", "0", "1", "1"],
+    ["0", "0", "0", "1"],
+    ["0", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["0", "1", "1", "0"],
+  ],
+  K: [
+    ["1", "0", "0", "1"],
+    ["1", "0", "1", "0"],
+    ["1", "1", "0", "0"],
+    ["1", "0", "1", "0"],
+    ["1", "0", "0", "1"],
+  ],
+  L: [
+    ["1", "0", "0", "0", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "0", "0", "0", "0"],
+    ["1", "1", "1", "1", "0"],
+  ],
+  M: [
+    ["1", "0", "0", "0", "1", "0"],
+    ["1", "1", "0", "1", "1", "0"],
+    ["1", "0", "1", "0", "1", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+  ],
+  N: [
+    ["1", "0", "0", "1"],
+    ["1", "1", "0", "1"],
+    ["1", "0", "1", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+  ],
+  O: [
+    ["0", "1", "1", "1", "0", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+    ["0", "1", "1", "1", "0", "0"],
+  ],
+  P: [
+    ["1", "1", "1", "0"],
+    ["1", "0", "0", "1"],
+    ["1", "1", "1", "0"],
+    ["1", "0", "0", "0"],
+    ["1", "0", "0", "0"],
+  ],
+  Q: [
+    ["0", "1", "1", "0"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "1", "0"],
+    ["0", "1", "0", "1"],
+  ],
+  R: [
+    ["1", "1", "1", "0"],
+    ["1", "0", "0", "1"],
+    ["1", "1", "1", "0"],
+    ["1", "0", "1", "0"],
+    ["1", "0", "0", "1"],
+  ],
+  S: [
+    ["0", "1", "1", "1"],
+    ["1", "0", "0", "0"],
+    ["0", "1", "1", "0"],
+    ["0", "0", "0", "1"],
+    ["1", "1", "1", "0"],
+  ],
+  T: [
+    ["1", "1", "1", "1", "1"],
+    ["0", "0", "1", "0", "0"],
+    ["0", "0", "1", "0", "0"],
+    ["0", "0", "1", "0", "0"],
+    ["0", "0", "1", "0", "0"],
+  ],
+  U: [
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["1", "0", "0", "1"],
+    ["0", "1", "1", "0"],
+  ],
+  V: [
+    ["1", "0", "0", "0", "1"],
+    ["1", "0", "0", "0", "1"],
+    ["0", "1", "0", "1", "0"],
+    ["0", "1", "0", "1", "0"],
+    ["0", "0", "1", "0", "0"],
+  ],
+  W: [
+    ["1", "0", "0", "0", "1", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+    ["1", "0", "1", "0", "1", "0"],
+    ["1", "1", "0", "1", "1", "0"],
+    ["1", "0", "0", "0", "1", "0"],
+  ],
+  X: [
+    ["1", "0", "0", "1"],
+    ["0", "1", "1", "0"],
+    ["0", "0", "0", "0"],
+    ["0", "1", "1", "0"],
+    ["1", "0", "0", "1"],
+  ],
+  Y: [
+    ["1", "0", "0", "0", "1"],
+    ["0", "1", "0", "1", "0"],
+    ["0", "0", "1", "0", "0"],
+    ["0", "0", "1", "0", "0"],
+    ["0", "0", "1", "0", "0"],
+  ],
+  Z: [
+    ["1", "1", "1", "1"],
+    ["0", "0", "0", "1"],
+    ["0", "0", "1", "0"],
+    ["0", "1", "0", "0"],
+    ["1", "1", "1", "1"],
+  ],
+};
+----
+
+==== Filename: src/app/_components/posts/post-title.tsx ====
+import { ReactNode } from "react";
+import Link from "next/link";
+
+type Props = {
+  children?: ReactNode;
+};
+
+export function PostTitle({ children }: Props) {
+  return (
+    <>
+      <div className="mb-12">
+        <h1 className="text-2xl font-bold tracking-tighter mb-4">
+          {children}
+        </h1>
+        <div>
+          <Link href={`/`} className="text-miami-blue underline">
+            Back to main
+          </Link>
+          <span> | </span>
+          <Link
+            href={`/posts`}
+            className="text-miami-blue underline"
+          >
+            See all posts
+          </Link>
+        </div>
+      </div>
+    </>
+  );
+}
+----
+
+==== Filename: src/app/_components/posts/post-body.tsx ====
+import markdownStyles from "../../_styles/markdown-styles.module.css";
+
+type Props = {
+  content: string;
+};
+
+export function PostBody({ content }: Props) {
+  return (
+    <div className="max-w-4xl mx-auto">
+      <div className={markdownStyles["markdown"]} dangerouslySetInnerHTML={{ __html: content }} />
+    </div>
+  );
+}
+----
+
+==== Filename: src/app/_components/posts/post-list.tsx ====
+import { PostPreview } from "./post-preview";
+
+type Post = {
+  slug: string,
+  title: string,
+  date: string
+};
+
+type Props = {
+  posts: Post[] 
+};
+
+export function PostList({ posts }: Props) {
+  return (
+    <>
+      {posts.map((post) => (
+        <PostPreview
+          key={post.slug}
+          title={post.title}
+          date={post.date}
+          slug={post.slug}
+        />
+      ))}
+    </>
+  );
+}
+----
+
+==== Filename: src/app/_components/posts/post-preview.tsx ====
+import Link from "next/link";
+import DateFormatter from "../../../util/date-formatter";
+
+type Props = {
+  title: string;
+  date: string;
+  slug: string;
+};
+
+export function PostPreview({ title, date, slug }: Props) {
+  return (
+    <div>
+      <h4 className="text-sm mb-3 leading-snug">
+        <DateFormatter dateString={date} />
+        <span> | </span>
+        <Link href={`/posts/${slug}`} className="underline text-miami-blue">
+          {title}
+        </Link>
+      </h4>
+    </div>
+  );
+}
+----
+
+==== Filename: src/app/_components/posts/post-header.tsx ====
+import DateFormatter from "../../../util/date-formatter";
+import { PostTitle } from "./post-title";
+
+type Props = {
+  title: string;
+  coverImage: string;
+  date: string;
+};
+
+export function PostHeader({ title, coverImage, date }: Props) {
+  return (
+    <>
+      <div className="max-w-4xl mx-auto">
+        <PostTitle>{title}</PostTitle>
+        <div className="mb-6 text-lg font-bold">
+          <DateFormatter dateString={date} />
+        </div>
+      </div>
+    </>
+  );
+}
+----
+
+==== Filename: src/app/_components/gradientline.tsx ====
+import React from "react";
+
+const GradientLine: React.FC = () => (
+  <div className="w-full max-w-4xl mx-auto mt-2 mb-6 px-4">
+    <div className="h-px bg-gradient-to-r from-gray-200 via-gray-200 to-gray-900" />
+  </div>
+);
+
+export default GradientLine;
+----
+
+==== Filename: src/app/_components/socialmediaicons.tsx ====
+import Image from "next/image";
+import { FC } from "react";
+
+// Import the SVG images
+import envelopeIcon from "../img/emaillogo.svg";
+import githubIcon from "../img/githublogo.svg";
+import twitterIcon from "../img/twitterlogo.svg";
+import linkedinIcon from "../img/linkedinlogo.svg";
+
+const SocialMediaIcons: FC = () => {
+  return (
+    <div className="social-media-icons mb-10">
+      <a
+        href="https://www.linkedin.com/in/david-k-oh/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={linkedinIcon}
+          alt="Linkedin"
+          width={32}
+          height={32}
+        />
+      </a>
+      <a
+        href="https://github.com/dkoh2018"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={githubIcon}
+          alt="Github"
+          width={32}
+          height={32}
+        />
+      </a>
+      <a
+        href="https://twitter.com/0x_nietoh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={twitterIcon}
+          alt="Twitter"
+          width={32}
+          height={32}
+        />
+      </a>
+      <a
+        href="mailto:davidoh2018@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={envelopeIcon}
+          alt="Email"
+          width={32}
+          height={32}
+        />
+      </a>
+    </div>
+  );
+};
+
+export default SocialMediaIcons;
+----
+
+==== Filename: src/app/_components/container.tsx ====
+type Props = {
+  children?: React.ReactNode;
+};
+
+const Container = ({ children }: Props) => {
+  return <div className="container mx-auto px-5">{children}</div>;
+};
+
+export default Container;
+----
+
+==== Filename: src/app/_components/section.tsx ====
+import Container from "./container";
+
+type Props = {
+  title: string;
+  children: React.ReactNode;
+};
+
+export function Section({ title, children }: Props) {
+  return (
+    <div className="mx-auto mb-8 max-w-4xl">
+      <Container>
+        <h2 className="mb-4 text-2xl font-bold tracking-tighter leading-tight">{title}</h2>
+        <div>{children}</div>
+      </Container>
+    </div>
+  );
+}
+----
+
+==== Filename: src/app/_components/lightboardsection.tsx ====
+"use client";
+
+import { useState, useEffect, useCallback } from "react";
+import { LightBoard, PatternCell } from "./ui/lightboard";
+
+export function LightBoardSection() {
+  const [controlledDrawState, setControlledDrawState] =
+    useState<PatternCell>("2");
+  const [controlledHoverState, setControlledHoverState] =
+    useState(false);
+
+  const cycleDrawState = () => {
+    setControlledDrawState((prev) => {
+      switch (prev) {
+        case "0":
+          return "1";
+        case "1":
+          return "2";
+        case "2":
+          return "3";
+        case "3":
+          return "0";
+        default:
+          return "0";
+      }
+    });
+  };
+
+  return (
+    <section className="text-center mb-8">
+      <div className="w-full max-w-3xl mx-auto px-4">
+        <div
+          className="dark:bg-background mb-2"
+          style={{ marginTop: "16px" }}
+        >
+          <LightBoard
+            text="WELCOME"
+            rows={17}
+            gap={1}
+            lightSize={4}
+            font="default"
+            updateInterval={500}
+            colors={{
+              background: "#1a1a1a",
+              textDim: "#3a3a3a",
+              drawLine: "#7a7a7a",
+              textBright: "#ffffff",
+            }}
+            controlledDrawState={controlledDrawState}
+            controlledHoverState={controlledHoverState}
+            onDrawStateChange={setControlledDrawState}
+            onHoverStateChange={setControlledHoverState}
+            disableDrawing={false}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+----
+
+==== Filename: src/app/_components/navigation.tsx ====
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const Navigation = () => {
+  const pathname = usePathname();
+
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Ethos", path: "/work" },
+    // { name: "Projects", path: "/projects" },
+    { name: "Blog", path: "/posts" },
+    { name: "GuestBook", path: "/guestbook" },
+  ];
+
+  return (
+    <nav className="w-full max-w-4xl mx-auto mt-4 mb-2 px-4">
+      <div className="flex justify-end space-x-3 md:space-x-6">
+        {navItems.map((item) => (
+          <Link
+            key={item.path}
+            href={item.path}
+            className={`text-sm font-medium transition-colors duration-200 ${
+              pathname === item.path
+                ? "text-black"
+                : "text-gray-500 hover:text-black"
+            }`}
+          >
+            {item.name}
+          </Link>
+        ))}
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;
+----
+
+==== Filename: src/app/_components/headersection.tsx ====
+import GradientLine from "./gradientline";
+import Navigation from "./navigation";
+
+const HeaderSection = () => {
+  return (
+    <section className="text-center mt-20 mb-8">
+      <h1 className="text-3xl font-bold">davidoh</h1>
+      <h2 className="mt-2">IPA - /ˈdeɪvɪd oʊ/</h2>
+      <h2 className="mt-2">
+        davidoh2018 <b>[at]</b> gmail <b>[dot]</b> com
+      </h2>
+      <Navigation />
+      <GradientLine />
+    </section>
+  );
+};
+
+export default HeaderSection;
+----
+
+==== Filename: src/app/work/ui/horizontalline.tsx ====
+import React from "react";
+
+const HorizontalLine: React.FC = () => {
+  return (
+    <div className="w-full my-8 px-4 mb-16">
+      <div className="relative h-0.5">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-400 to-gray-100"></div>
+      </div>
+    </div>
+  );
+};
+
+export default HorizontalLine;
+----
+
+==== Filename: src/app/work/ui/workexperienceimg.tsx ====
+import React from "react";
+import Image from "next/image";
+
+interface WorkExperienceImagesProps {
+  images?: string[];
+}
+
+const WorkExperienceImages: React.FC<WorkExperienceImagesProps> = ({
+  images,
+}) => {
+  if (!images || images.length === 0) return null;
+
+  return (
+    <div className="flex space-x-4 mt-4">
+      {images.map((src, index) => (
+        <div key={index} className="w-1/3">
+          <Image
+            src={src}
+            alt={`Project image ${index + 1}`}
+            width={300}
+            height={200}
+            className="rounded-lg"
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default WorkExperienceImages;
+----
+
+==== Filename: src/app/work/ui/pulsatingbubble.tsx ====
+import React from "react";
+import styled, { keyframes } from "styled-components";
+
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
+const Bubble = styled.div`
+  width: 14px;
+  height: 14px;
+  background-color: #000;
+  border-radius: 50%;
+  animation: ${pulse} 1s infinite;
+`;
+
+const PulsatingBubble: React.FC = () => {
+  return <Bubble />;
+};
+
+export default PulsatingBubble;
+----
+
+==== Filename: src/app/work/ui/aboutmeitem.tsx ====
+import React from "react";
+import Link from "next/link";
+
+interface AboutMeItemProps {
+  title: string;
+  description: string[];
+  link?: string;
+  images?: string[];
+}
+
+const AboutMeItem: React.FC<AboutMeItemProps> = ({
+  title,
+  description,
+  link,
+  images,
+}) => {
+  return (
+    <div className="px-6 py-2">
+      {" "}
+      <div className="w-full">
+        <h3 className="text-xl font-semibold mb-4">
+          {link ? (
+            <Link href={link} className="hover:underline">
+              {title} →
+            </Link>
+          ) : (
+            title
+          )}
+        </h3>
+        <div>
+          {description.map((paragraph, index) => (
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutMeItem;
+----
+
+==== Filename: src/app/work/ui/verticalline.tsx ====
+"use client";
+import React from "react";
+import PulsatingBubble from "./pulsatingbubble";
+
+const VerticalLine: React.FC = () => {
+  return (
+    <div className="relative h-32 md:h-32 flex items-center justify-center">
+      <div className="absolute w-px bg-gray-900 h-5/6"></div>
+      {/* top pulsating bubble */}
+      <div className="absolute -top-2 flex items-center justify-center">
+        <PulsatingBubble />
+      </div>
+      {/* bottom pulsating bubble */}
+      <div className="absolute -bottom-2 flex items-center justify-center">
+        <PulsatingBubble />
+      </div>
+    </div>
+  );
+};
+
+export default VerticalLine;
+----
+
+==== Filename: src/app/work/ui/workexperienceitem.tsx ====
+import React from "react";
+import Link from "next/link";
+import WorkExperienceImages from "./workexperienceimg";
+import VerticalLine from "./verticalline";
+
+interface WorkExperienceItemProps {
+  date: string;
+  title: string;
+  company: string;
+  description: string[];
+  link?: string;
+  images?: string[];
+}
+
+const WorkExperienceItem: React.FC<WorkExperienceItemProps> = ({
+  date,
+  title,
+  company,
+  description,
+  link,
+  images,
+}) => {
+  return (
+    <div className="mb-12 relative">
+      {" "}
+      <div className="flex items-center mb-10">
+        <div className="w-5/6 text-left pr-10 md:pr-4">
+          <div className="pl-10">
+            <span className="ml-auto text-sm md:text-base text-gray-500">
+              {date}
+            </span>
+          </div>
+        </div>
+
+        <div className="w-4/6 ml-auto grid grid-cols-5">
+          <div className="col-start-1 col-span-1 flex justify-center">
+            <VerticalLine />
+          </div>
+        </div>
+      </div>
+      <div className="flex">
+        <div className="flex-1"></div>
+        <div className="w-5/6 ml-auto pl-2 md:pl-4">
+          <h3 className="text-lg md:text-xl font-semibold mb-1 md:mb-2">
+            {link ? (
+              <Link href={link} className="hover:underline">
+                {title} →
+              </Link>
+            ) : (
+              title
+            )}
+          </h3>
+          <p className="text-gray-600 mb-2 md:mb-4">{company}</p>
+          {description.map((paragraph, index) => (
+            <p key={index} className="mb-2 md:mb-4">
+              {paragraph}
+            </p>
+          ))}
+          <WorkExperienceImages images={images} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default WorkExperienceItem;
+----
+
+==== Filename: src/app/work/workexperience.ts ====
+export interface WorkExperience {
+  title: string;
+  company: string;
+  date: string;
+  description: string[];
+}
+
+export const experiences: WorkExperience[] = [
+  {
+    title: "master of science: computer science",
+    company: "depaul university",
+    date: "2024 - present",
+    description: [
+      "after many years of wanting to break into tech and fear of leaving the industry, i've finally taken a chance on hybridly switching my career. i mean, number one, i really didn't enjoy that career in sales.",
+      "while i don't necessarily want to leave trading, coding after work made me realize that my passion lies here. to fool around a bit, i've created acegpt, a next.js website utilizing chatgpt api to generate college-level tests based on varying difficulty and content given the user's study guide and practice test materials.",
+      "currently assisting in creating models for locomotion devices at the ral lab under professor muhammad umer huzaifa. i spend long nights immersing myself in new ai applications, especially those geared towards network and energy use cases, recognizing the nation's growing need for energy efficiency for mass ai and app development adoption.",
+    ],
+  },
+  {
+    title: "saas development specialist",
+    company: "ycharts",
+    date: "june 2023 - november 2023",
+    description: [
+      "this role was just a teaser. after 9 years in the financial markets, i felt the need for a change and, in a moment of spontaneity, decided to try out sales. it never hurts to get better at public speaking and engaging with people, especially in selling products.",
+      "although the long, grueling phone calls weren't my specialty, this role served as a transitional phase after a successful career in finance. andrew (dude's a great man) taught me a great deal about compassion even when capitalism is on the line. he's someone i highly recommend. he significantly contributed to my growth in this field in a short amount of time and despite this valuable experience, my passion for building in the digital realm eventually led me to depaul. it's local and close.",
+      "i learned a lot though. leveraged hubspot's advanced features to restructure the client database, improving engagement precision and data integrity. achieved an outstanding 50% email response rate through data-driven analysis and persuasive communication. identified over 5,000 high-potential prospects in the wealth management sector within a short time, while maintaining a 15% connect rate. utilized data analytics to align specialized solutions with specific client needs.",
+    ],
+  },
+  {
+    title: "founder / coo",
+    company: "efo edge, llc",
+    date: "may 2020 - june 2023",
+    description: [
+      "people really struggled, and i had already built a twitter following right after graduation in 2018. since i was trading independently, i thought, why not post free trades for people to see and grow my reputation. under the handle ironmanoptions (yes, i know, it's quite a name, but the marvel hype was real and who doesn't love tony stark), i experienced a wild ride.",
+      "i grew thousands of followers and eventually converted them into a group chat with about 2000 members, co-managed with a partner. eventually, two group chats merged, reaching over 5000 members, right as the pandemic hit. within 2 weeks, my partner, three team members, and i went from scratch and delivered a service that astonished us.",
+      "we had over 200 members within the first 2-3 weeks, and the rate just grew as our clients reaped the benefits of the bear market. over time, numerous members became official moderators, fostering a great community across fintwit and discord. despite never meeting my co-partner in person, we managed to create a six-figure business annually. it's the new age of business!",
+      "overall i led strategic vision and product development, resulting in a 55% increase in new member leads and organic growth of 20,000+ twitter followers. developed a python-driven backend for the efo edge website, integrating apis for efficient member management and data analysis. implemented data-driven decision-making processes by extracting and analyzing backend analytics, optimizing user experiences and informing strategic initiatives. built and maintained a thriving community of 750+ organic members with a 45% retention rate.",
+    ],
+  },
+  {
+    title: "leave of absence",
+    company: "",
+    date: "january 2020",
+    description: [
+      "i took some time off due to a motorcycle injury on my left leg and calcification on my left shoulder. those were some of the worst times of my life, and i genuinely empathize with people suffering from chronic pain.",
+      "after enduring serious pain for over 3 months, i decided to go straight to korea for treatment, as the us medical system takes forever with scheduling. it's no joke—people may have died due to the waiting time in our system. medical devices are outdated, and mri scans only available on mondays? what the f?",
+      "anyway, i received electro shockwave therapy treatment on my shoulder for about a month straight thanks to my uncle and was eventually able to get everything diagnosed and fixed within a month. and guess what. the flight and fixup was still cheaper than america...",
+      "i got home on january 28, 2020, just a few days before the trump travel ban. people thought i was crazy when i started heavily shorting the bullish markets. sometimes, you just have to see it to believe it.",
+    ],
+  },
+  {
+    title: "equity derivatives trader",
+    company: "self-employed",
+    date: "june 2018 - may 2020",
+    description: [
+      "i decided to take a break from the corporate world as i already had a profitable strategy in place. times were tough due to disagreements on the direction of the fund we were running, but it was a risk i was willing to take when i decided to leave. for 2 years, i grinded like no other in my private office, foregoing an apartment, and managed to work day and night, even on weekends. having the freedom to be self-employed was a great motivator, pushing me to work tirelessly and achieve my goals.",
+      "and thank god it worked. was able to afford everything i wanted and finally got to marry the girl of my dreams at 25 years old. young and grateful.",
+      "i started to learn some python so i developed some web scraping and etl processes, creating a comprehensive financial metrics database from 10-q and 10-k reports. helped me achieve a 69%+ year-over-year roi and i'm being fair. billion dollar funds doing 30% is insane. not for smaller accounts if you put in the work.",
+    ],
+  },
+  {
+    title: "equity researcher/trader",
+    company: "armitage capital",
+    date: "may 2017 - april 2018",
+    description: [
+      "i started this fund with a group of friends from northwestern. we had the privilege of working with some of the brightest minds during our time there, and fortunately, we met great people who delivered alpha at the time.",
+      "quickly promoted to lead biotech investments, i achieved a 65% success rate in fda phase approval analysis and made smart moves during apple’s share buyback program.",
+      "my focus was conducting top-down fundamental research using bloomberg terminal to identify mispriced assets and derivatives.",
+      "most of my time was analyzing institutional inflow/outflow, trend analysis, and risk utilizing tpo and dom strats. took first steps into data and learned to utilize sql financial databases.",
+    ],
+  },
+  {
+    title: "risk management analyst",
+    company: "cigna global",
+    date: "june 2016 - august 2016",
+    description: [
+      "my first time working abroad was a truly exciting experience. i collaborated with korea’s three biggest tech companies on a project that integrated iot wearable devices into life insurance contracts. i analyzed trends across 75 types of habits and routines of the south korean population to create models assessing premium structuring.",
+      "had the privilege of later working next to the ceo as i simplified his agenda and phoned in international conferences by providing english to korean translation services. this was perhaps my first step into the big world of business.",
+      "lots and lots of food thanks to the company. i appreciate you guys - rm team.",
+    ],
+  },
+  {
+    title: "team manager",
+    company: "venu",
+    date: "february 2016 - june 2016",
+    description: [
+      "starting venu with a group of friends was an exhilarating journey. the class was about running a real startup, so we decided to go all in and create a startup.",
+      "we developed a platform that engaged over 70 venues in the chicago metropolitan area, delighting customers by creating opportunities to list, discover, and book unique venues that met their thematic and financial needs. leading a team of 8 web developers, we created a user-friendly website that acted as an ‘airbnb’ for venues for northwestern.",
+      "received fantastic feedback from thousands of students, organizing events ranging from formals and sorority/fraternity parties to mixers and gatherings but not to mention that we had a ton of fun as well ;)",
+    ],
+  },
+  {
+    title: "research assistant",
+    company: "kellogg school of management",
+    date: "2015 - 2016",
+    description: [
+      "cooperated with prof. maryam kouchaki in over 6 behavioral economic studies between multiple industries and corporations on corporate ethical behavior.",
+      "worked overtime first year into college... :(",
+    ],
+  },
+  {
+    title: "undergraduate",
+    company: "northwestern university - weinberg college of arts and sciences",
+    date: "2014 - 2018",
+    description: ["graduated with a degree in philosophy - logics from weinberg. go cats."],
+  },
+  {
+    title: "from cradle to pre-college",
+    company: "chicago",
+    date: "1995 - 2014",
+    description: [
+      "fun fact, a fortune teller preplanned my birthday. south koreans have a way of going about things. 4:30pm sunday on a full moon for good luck",
+    ],
+  },
+];
+----
+
+==== Filename: src/app/work/page.tsx ====
+import { Section } from "../_components/section";
+import Link from "next/link";
+import WorkExperienceItem from "./ui/workexperienceitem";
+import AboutMeItem from "./ui/aboutmeitem";
+import { experiences } from "./workexperience";
+import { interests } from "./aboutme";
+import HorizontalLine from "./ui/horizontalline";
+
+export default function ResumeCV() {
+  return (
+    <>
+      <Section title="">
+        <div className="mx-auto mb-8 max-w-4xl">
+          <Link href="/" className="text-miami-blue underline mb-8">
+            back to main
+          </Link>
+
+          <section className="mt-12 mb-12">
+            {interests.map((exp, index) => (
+              <AboutMeItem key={index} title={exp.title} description={exp.description} />
+            ))}
+          </section>
+          <HorizontalLine />
+          <section className="mt-12 mb-20">
+            {experiences.map((exp, index) => (
+              <WorkExperienceItem
+                key={index}
+                date={exp.date}
+                title={exp.title}
+                company={exp.company}
+                description={exp.description}
+              />
+            ))}
+          </section>
+        </div>
+      </Section>
+    </>
+  );
+}
+----
+
+==== Filename: src/app/work/aboutme.ts ====
+export interface AboutMe {
+  title: string;
+  description: string[];
+}
+
+export const interests: AboutMe[] = [
+  {
+    title: "what do i do",
+    description: [
+      "too many to cover. i love poker, crypto, equities, chess, driving, and feeling the thrill quietly. i also love to read a lot and some used to call me the human wikipedia. rabbit hole ventures can get interesting",
+    ],
+  },
+  {
+    title: "my wife - jane",
+    description: ["can't live without her!!! happy since 2017"],
+  },
+  {
+    title: "mocha",
+    description: ["i love my dog. good loyal boy"],
+  },
+];
+----
+
+==== Filename: src/app/layout.tsx ====
+import type { Metadata } from "next";
+import { GeistMono } from "geist/font/mono";
+import { ThemeProvider } from "next-themes";
+import HeaderSection from "./_components/headersection";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: `davidoh`,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${GeistMono.className}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+      </head>
+      <body className="overflow-y-auto bg-darkSlate text-darkText">
+        <ThemeProvider attribute="class">
+          <HeaderSection />
+          <div className="flex-grow">{children}</div>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
+----
+
+==== Filename: src/app/guestbook/page.tsx ====
+import Image from "next/image";
+import { Section } from "../_components/section";
+import githubIcon from "../img/githublogo.svg";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Guestbook",
+  description: "Sign my guestbook and leave your mark.",
+};
+
+export default function GuestBook() {
+  return (
+    <Section title="Guestbook">
+      <div className="flex-grow flex items-center justify-start mt-10">
+        <button className="px-3 py-2 border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 mb-5">
+          <Image
+            alt="GitHub logo"
+            src={githubIcon}
+            width={20}
+            height={20}
+          />
+          <div className="ml-3">Sign in with GitHub</div>
+        </button>
+      </div>
+      <div className="flex-grow flex items-center justify-center mt-5">
+        <p className="text-2xl font-bold text-center text-gray-600">
+          Looks like this page took a vacation
+        </p>
+      </div>
+      <div className="mt-10">
+        <Link href={`/`} className="text-miami-blue underline">
+          Back to main
+        </Link>
+      </div>
+    </Section>
+  );
+}
+----
+
+==== Filename: src/app/page.tsx ====
+import Container from "./_components/container";
+import { PostList } from "./_components/posts/post-list";
+import { getAllPosts, getRecentFive } from "../lib/api";
+import { Section } from "./_components/section";
+import Link from "next/link";
+import { LightBoardSection } from "./_components/lightboardsection";
+import SocialMediaIcons from "./_components/socialmediaicons";
+
+export default function Index() {
+  const allPosts = getAllPosts();
+  const firstFivePosts = getRecentFive();
+
+  return (
+    <>
+      <LightBoardSection />
+      <Section title="👋 what do you know, its david oh">
+        <div className="mb-5"></div>
+        <p className="mb-4">
+          this blog is where i share my story, the lessons i've learned, and the insights i continue
+          to gather. whether it's finance, tech or ranting, stick around. maybe you'll learn a thing
+          or two stick around.
+        </p>
+        <div className="mb-4">
+          <p>my current toolbox includes:</p>
+          <ul className="list-disc list-inside mt-2">
+            <li>Languages: Python, Java, C, TypeScript, React</li>
+            <li>Frameworks: Next.js</li>
+            <li>Databases: Firebase, SQL</li>
+          </ul>
+        </div>
+        <p className="mb-4">let's build something awesome together.</p>
+        <p className="mb-4">for now...</p>
+        <div className="space-y-2">
+          <div className="flex items-center">
+            <span className="mr-2">📚</span>
+            <Link
+              href={`/leetcode`}
+              className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200"
+            >
+              checkout this leetcode cheatsheet for young devs
+            </Link>
+          </div>
+          <div className="flex items-center">
+            <span className="mr-2">🗓️</span>
+            <Link
+              href={`/projects`}
+              className="text-sm underline text-purple-600 hover:text-purple-800 transition-colors duration-200"
+            >
+              i even made a google calendar ai on terminal
+            </Link>
+          </div>
+        </div>
+      </Section>
+      <Section title="blog">
+        {firstFivePosts.length > 0 && <PostList posts={firstFivePosts} />}
+        {allPosts.length > 5 && (
+          <Link href={`/posts`} className="underline text-miami-blue">
+            see all posts
+          </Link>
+        )}
+      </Section>
+      <SocialMediaIcons />
+    </>
+  );
+}
+----
+
+==== Filename: src/app/globals.css ====
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+scrollbar-width: none; /* firefox */
+-ms-overflow-style: none; /* IE/Edge */
+
+body {
+  font-family: var(--font-geist-mono);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625;
+  color: #111827;
+  background: #fbfcf8;
+  padding: 0;
+  margin: 0;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 0;
+  background: #ededee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+aside a {
+  color: #3b49df;
+  text-decoration: underline;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.bg-darkSlate {
+  background-color: #fbfcf8;
+}
+
+.text-darkText {
+  color: #111827;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-icons a {
+  margin-right: 10px;
+}
+
+p {
+  @apply text-sm;
+  @apply sm:text-sm;
+}
+
+ul,
+li {
+  @apply text-sm;
+  @apply sm:text-sm;
+
+  line-height: 1.5;
+}
+----
+
+==== Filename: src/util/date-formatter.tsx ====
+import { parseISO, format } from "date-fns";
+
+type Props = {
+  dateString: string;
+};
+
+const DateFormatter = ({ dateString }: Props) => {
+  const date = parseISO(dateString);
+  return <time dateTime={dateString}>{format(date, "LLLL	d, yyyy")}</time>;
+};
+
+export default DateFormatter;
+----
+
+==== Filename: src/lib/api.ts ====
+import { Post } from "../interfaces/post";
+import fs from "fs";
+import matter from "gray-matter";
+import { join } from "path";
+
+const postsDirectory = join(process.cwd(), "_posts");
+
+export function getPostSlugs() {
+  return fs.readdirSync(postsDirectory);
+}
+
+export function getPostBySlug(slug: string) {
+  const realSlug = slug.replace(/\.md$/, "");
+  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data, content } = matter(fileContents);
+
+  return { ...data, slug: realSlug, content } as Post;
+}
+
+export function getAllPosts(): Post[] {
+  const slugs = getPostSlugs();
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  return posts;
+}
+
+export function getRecentFive(): Post[] {
+  const slugs = getPostSlugs();
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  return posts.slice(0,5);
+}
+----
+
+==== Filename: src/lib/fauna.ts ====
+import "server-only";
+import { Client, fql, QuerySuccess, QueryValueObject } from "fauna";
+
+const client = new Client({
+  secret: process.env.FAUNA_CLIENT_SECRET,
+});
+
+export const getAllEntries = async () => {
+  try {
+    const dbresponse: QuerySuccess<QueryValueObject> =
+      await client.query(fql`
+		Entry.all()
+	`);
+    return dbresponse.data.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+
+export const createEntry = async (name: string, message: string) => {
+  try {
+    const dbresponse = await client.query(fql`
+			Entry.create({
+				name: ${name},
+				message: ${message},
+				createdAt: Time.now(),
+			})`);
+    return dbresponse.data;
+  } catch (error: any) {
+    throw new Error(error.message);
+  }
+};
+----
+
+==== Filename: src/lib/markdownToHtml.ts ====
+import { remark } from "remark";
+import html from "remark-html";
+
+export default async function markdownToHtml(markdown: string) {
+  const result = await remark().use(html).process(markdown);
+  return result.toString();
+}
+----
+
+==== Filename: src/interfaces/author.ts ====
+export type Author = {
+  name: string;
+  picture: string;
+};
+----
+
+==== Filename: src/interfaces/post.ts ====
+import { type Author } from "./author";
+
+export type Post = {
+  slug: string;
+  title: string;
+  date: string;
+  coverImage: string;
+  author: Author;
+  excerpt: string;
+  ogImage: {
+    url: string;
+  };
+  content: string;
+  preview?: boolean;
+};
+----
+
