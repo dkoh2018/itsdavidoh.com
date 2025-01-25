@@ -30,6 +30,8 @@ export default function Index() {
         </div>
         <p className="mb-4">for now...</p>
 
+
+      </Section>
       
       <Section title="🔫 shop for ammo (2025) - scraped ammoseek.com">
         <Link
@@ -40,8 +42,6 @@ export default function Index() {
         >
           18,000 rounds of savings locked and loaded
         </Link>
-      </Section>
-
       </Section>
       <Section title="🚗 shop for cars (2025) - scraped cars.com">
         <Link
