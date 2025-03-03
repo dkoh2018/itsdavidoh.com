@@ -1,27 +1,25 @@
-# itsdavidoh.com Repository
+# **itsdavidoh.com - Personal Website**
+A minimalist personal website built with **Next.js, React, and Tailwind CSS**, featuring a **blog, portfolio, guestbook, and projects showcase**.
 
-A dead simple personal website built with Next.js / React
+## **Key Features**
+- 🚀 **Next.js-powered**: Fast and efficient rendering.
+- 📝 **Blog system**: Markdown-based blogging with dynamic routing.
+- 🎨 **Tailwind CSS styling**: Fully responsive, sleek design.
+- 📚 **LeetCode Cheatsheet**: Programming interview resources.
+- 📜 **Guestbook**: Users can leave messages (integrated with GitHub OAuth).
+- 🛠️ **Custom-built projects**:
+  - **AI-powered Google Calendar CLI**
+  - **Automated web scrapers for cars & ammunition pricing**
+  - **Live coding tools and utilities**
+- 📡 **API Integrations**:
+  - Supabase (potential database management)
+  - FaunaDB (guestbook entries)
+  - OpenAI API (AI-powered utilities)
 
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [License](#license)
-
-## Features <a name="features"></a>
-
-- A clean and minimal design
-- A showcase of my projects and achievements
-- A blog section for sharing updates and insights
-
-## Getting Started <a name="getting-started"></a>
-
-1. Clone this repository to your local machine using `git clone https://github.com/dkoh2018/itsdavidoh.git`
-2. Update the content to reflect your own information
-3. Customize the design and layout as needed
-
-## License <a name="license"></a>
-
----
-
-This project is released under the [MIT License](https://opensource.org/licenses/MIT).
+## **Project Structure**
+- `/src/app/` - Core Next.js app structure.
+- `/_posts/` - Markdown blog posts.
+- `/lib/` - Utility functions (e.g., API handlers, Markdown rendering).
+- `/public/` - Static assets (images, icons).
+- `/styles/` - Global Tailwind CSS configurations.
+- `/components/` - Modular React components for UI and posts.
